@@ -1,0 +1,8 @@
+project name :- yoox web-clone
+team member names
+1 Kaushik
+2 shivom
+3 hemant
+4 somya
+5 ritesh
+6 gaurav
