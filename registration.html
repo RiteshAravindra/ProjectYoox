@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        #first-box{
+            width: 100%;
+            height: auto;
+            background-color: #F3F3F3;
+            text-align: center;
+            padding: 50px 0px;
+            font-size: 15px;
+        }
+        #first-box>p{
+            padding: 10px 0px 0px 0px;
+        }
+        #first-box>p+h4{
+           text-decoration-line: underline;
+        }
+        #main-box{
+            width:40%;
+            margin: auto;
+            font-size: 10px;
+            text-align: center;
+             padding: 30px 0px;
+        }
+        #main-box>h2+div{
+            background-color: blue;
+        }
+        #main-box>button{
+            width: 100%;
+            height: 50px;
+            margin: 10px;
+            /* background-color: black; */
+            /* height: 100px; */
+           
+        }
+        img{
+            width: 50px;
+            height:35px;
+            margin: auto;
+            
+        }
+        #by-email{
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #by-email>input{
+           background-color: #F6F6F6;
+            width: 100%;
+            height: 50px;
+            margin: 10px 0px;
+            border-color: transparent;
+            font-weight: bold;
+            color: black;
+            font-size: larger;
+        }
+        #by-email>p{
+            text-align: left;
+            font-size: small;
+            font-weight: bold;
+        }
+        #submit{
+            width: 100%;
+          padding: 15px;
+          /* margin-top: 10px; */
+          background-color: #333333;
+          color: white;
+          font-size: larger;
+          font-weight: bolder;
+          width: 40%;
+         display: flex;
+         margin: auto;
+         justify-content: center;
+         align-items: center;
+        }
+        #gender{
+            display: flex;
+            margin: 20px;
+          align-items: center;
+           justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="first-box">
+            <h1>MYOOX</h1>
+            <h2>REGISTRATION</h2>
+             <p>Take advantage of a faster checkout and enjoy promotions for registered customers only</p>
+             <h4>Discover all the benefits</h4>
+        </div>
+        <div id="main-box">
+            <h2>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</h2>
+            <button>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAAB9CAMAAADN/+LxAAAAZlBMVEX///8Yd/IAcfIAa/EQdfKnwfmjwPi3zvoAbvEAZfEAc/JDg/MAafH3+f+xyfnl7f1wn/Xr8f0AYfDc5/yrxfnN3fuevPhEh/NonPUwfPKDqvYrf/OStfdgl/XE1vqJrfZTj/R3pfYzPTe4AAAEEUlEQVR4nO2bi1KrMBBAS4g0pFBKeZWmUP3/n7ylWhXYsIlXNzjmzOg4COMpbpLNJtlsPB6Px+PxeDwej8fj+UukeTGQpa5FrEjz7aVr2hvB7Us13XWb/4pPkO3PKk6E5MGN129SJLE67zPXaghV1zJ2N57AGVNd71pPTxa1sQS8H8i4jVb68i9KLJnf377YXVxrzklLFiLirwhWrqzdZp2Aohx892FXuNb9RBodsWj5jDxGro0/6ISF+T1wOtfKb1SKWaoHAdtVrrUHKm6vfpPnK5DfSptQ/0DyrWv1PjTtX6bw0PEw2wdfVR+SHadhU3CzgOEDs6uSO+zo0wZvprckjA3mkkt5+3H0WdmzuyH2hKrzRB3qbZHleVZUfVlfu9Gv2cGVeolmMKLd5+Nn0t0odsK9G/UCe+uS17OHJu6BdBPyB8RdQsPP1N1N1GxjRF1BDXHqHsQuhiiF9OwS7L1n7lxRi282NRIxIZznztwDNm8UP0zeLI9KUvM65+6yyeFbf4x9svzahabzm7sHCXU/iUQ732kKAoA739GqV8hMSZ4A7Ttz94DR5mRn25Za1S+H0wBwM7tSqmMtNYgnw+VJCnZHArFG21orpKUGx9G4lB6WM5+QMmguWGEgGd3eI0mboCyWKWzKwUa3o5kPYU+TYiEzcUcnhonmD/0AFZq4j93RKQphwEdoHczSXZRk7i+ojKU7O5O5H9DqgKW7JJuBpM/f7c47qoJB/u3u8plqZM0atBhm+97JsoIMyAVfjcMH8eiB+P16CH8M3lCtoenc2Uv59MY4jYwel59KuJlr0/3vd9fETGIw5a/BoYHuvef/4Q6nNnTxrutnDNxTOPGn62fS7svuOfwfo+vfdeOqgXt2BJ+kG1d1s1UD9x7OngnzGU0eaeAOdzOUeaQmfzdw18ygCPN3zbzJwF0zqhHOmzRVMdw9bUF1yvmqpk6Au2ewO2mdAK7PsPNT9Ma4Ll0/Ll/hkCGtz2iyAskehKPbw/fr8GO0VWysHmmVv9PWI9E6sJ078dq8bvrxBXfq+ju27mHjTr7ugVSxLdzp15uQdT4Ld0G+zoesOJm7k0f7wOK6trm7k3Xtxaq6sbujXShL+ziM3R3t41jaP2Pq7mr/zFLUGLoLZ/uWFvaLmbmzxuGW7IJpRigjd6f79PT7I03ceeB6cye8L9XAnQvnxz/g/cC4u5TO9wNr9mGj7qvYhw3vf8fcmVqF+gY6d4C4r+bcAXTeY9FdHqM1HbXJunF/s+DORbeyA1qT801693B155sGLurjjJPGXa7yXNlAFvGYLbizuC3J56bm9CfFhlN9M3cumDqtpV/Uke2vuziZrA0nsbpOd8KvkzTvx1W633Ju2OPxeDwej8fj8Xg8nj/OPyhWM6KImy0AAAAAAElFTkSuQmCC" alt="">
+            </button>
+            <button>
+                <img src=" data:image/png;base64,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" alt="">
+            </button>
+            
+        </div>
+        <div id="by-email">
+            <h4>OR WITH YOUR EMAIL</h4>
+            <input id="firstName" type="text" placeholder="FIRST NAME*">
+             <input id="lastName" type="text" placeholder="LAST NAME*">
+             <input id="email" type="email" placeholder="E-MAIL*">
+             <input id="password" type="password" placeholder="PASSWORD*">
+             <P>Personalize your shopping experience.</P>
+             <div id="gender">
+                <input type="radio" name="gender">  Female
+               <input type="radio" name="gender">    Male
+             </div>
+            
+             <!-- <select  id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+             </select> -->
+             <p>If you are over 18 years old, celebrate your birthday with us: We have a surprise for you.</p>
+             <input id="date" type="date" placeholder="DATE OF BIRTH">
+              <P>I declare that I have read and accept the MYOOX Terms and Conditions of Use</P>
+              <P>	I agree to the use of my personal data in order to be updated on new arrivals, informed about exclusive items and contacted as part of targeted marketing initiatives related to services offered by YOOX.
+                By analyzing my personal data, order history and browsing habits, YOOX can improve my shopping experience with suggestions that correspond to my interests.
+                For further information, please consult the Privacy Policy.</P>
+                <!-- <BUtton>REGISTER</BUtton> -->
+        </div>
+        <input id="submit" type="submit" name="REGISTER" value="REGISTER" />
+    </form>
+    
+</body>
+<script>
+document.querySelector("form").addEventListener("submit",myfun)
+clientArr = JSON.parse(localStorage.getItem("clientDetail")) || []
+function myfun(event){
+    event.preventDefault()
+     let clientData = {
+         firstName:document.querySelector("#firstName").value,
+         lastName:document.querySelector("#lastName").value,
+         email:document.querySelector("#email").value,
+         password:document.querySelector("#password").value,
+         gender:document.querySelector("#gender").value,
+         dateOfBirth:document.querySelector("#date").value
+     }
+     clientArr.push(clientData)
+     localStorage.setItem("clientDetail",JSON.stringify(clientArr))
+}
+</script>
+</html>
