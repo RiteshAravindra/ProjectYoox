@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: 0px;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    #root{
+       
+        background-color: #f3f3f3;
+    }
+    img{
+       margin-left: 2%;
+    }
+    .fun{
+        
+        position: absolute;
+        margin-top: -180px;
+        margin-left: 50px;
+        text-align:left;
+        padding: 20px;
+        width: 380px;
+        height:100px;
+        background-color: white;
+        line-height: 40px;
+        padding-bottom: 35px;
+    }
+    .one{
+        font-size: 25px;
+        font-family: "IM Fell French Canon SC";
+        letter-spacing: 0.50px;
+    }
+    .two{
+        color: rgb(92, 91, 91);
+        text-decoration-color: black;
+        font-size:large;
+        font-weight:100;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.50px;
+        }
+    .shop{
+        font-family: Optima;
+        color: black;
+        
+        position:absolute;
+        
+    }
+    .shoponea{
+        color: black;
+    }
+    .shopone{
+        color: black;
+    }
+    .shoptwoa{
+        color: black;
+    }
+    .shoptwo{
+        margin-left: 30px;
+        color: black;
+    }
+    #sec-1{
+       
+        margin-top: 100px;
+        width: 100%;
+        
+        display: flex;
+
+    }
+    .sec1-p1{
+        width: 20%;
+        
+        height: 100%;
+        margin-left: 2%;
+        height: auto;
+        text-align: center;
+    }
+    .sec1-p2{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2%;
+        line-height: 30px;
+        text-align: center;
+        
+    }
+    .sec1-p2p1{
+        width: 30.50%;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        background-color: #ffffff;
+        }
+   
+    
+    .sec1-p2p1img{
+        margin-left: -0.50%;
+        
+    }
+    
+    h3+h6{
+        font-weight: 100;
+        font-size:small;
+        font-family: "Abel";
+        color: rgb(82, 82, 82);
+    }
+    h6+h6{
+       font-size: small;
+       font-weight: 100;
+    }
+    h6~h6+h6{
+        margin-top: -7px;
+        font-size: small;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .sec1-p1a1{
+        margin-top: 70%;
+        font-size: 30px;
+        margin-left: 2%;
+        font-weight: lighter;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+    .sec1-p1a2{
+        margin-top: 7%;
+        font-size: 17px;
+        margin-left: 2%;
+        font-weight: lighter;
+        text-align: left;
+        color:black;
+        letter-spacing: 0.50px;
+    }
+    .sec1-p1a2>a{
+        color: black;
+    }
+    #sec-2{
+       
+       margin-top: 100px;
+       width: 100%;
+       display: flex;
+
+   }
+   .sec2-p2{
+    width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2%;
+        line-height: 30px;
+        text-align: center;
+   }
+   .sec2-p2p1{
+    width: 30.50%;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        background-color: #ffffff;
+   }
+   #sec-3{
+       margin-top: 5%;
+       text-align: center;
+       
+   }
+
+#sec-3>div:first-child{
+       font-size: 30px;
+       letter-spacing: 2px;
+       font-weight: lighter;
+       font-family: "Abel";
+       margin-bottom: 2%;
+   }
+   #sec-3>div:nth-child(2)>span{
+       margin-left: 1.50%;
+       margin-right: 1.50%;
+   }
+   #sec-4{
+       margin-top: 5%;
+       text-align: center;
+       
+   }
+   .sec4-p2{
+       display: flex;
+       justify-content: center;
+       gap: 30px;
+       text-align: center;
+   }
+   .sec4-p2>div{
+    width: 22%;
+       line-height: 35px;
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   }
+   .sec4-p2>div>a{
+       color: black;
+       text-decoration: none;
+       font-weight: bold;
+   }
+    
+   .sec4-p2p1>h4{
+       padding: 20px;
+       font-weight: lighter;
+   }
+   #awesome{
+       margin-top: 100px;
+       margin-bottom: 50px;
+       color: black;
+   }
+   #awesome>a{
+       color: black;
+      
+   }
+    
+   #sec-5{
+       display: flex;
+       margin-top: 40px;
+       gap: 10px;
+      
+       justify-content: space-evenly;
+       text-align: center;
+       line-height: 35px;
+   }
+   #sec-5>div>span>a{
+       color: black;
+   }
+#sec-6{
+    margin-top: 100px;
+        width: 100%;
+        
+        display: flex;
+
+}
+.sec6-p2{
+    width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2%;
+        line-height: 30px;
+        text-align: center;
+}
+.sec6-p2p1{
+    width: 30.50%;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        background-color: #ffffff;
+}
+
+.banner2{
+       margin-top: 80px;
+   }
+
+
+
+  
+   
+    
+</style>
+<body>
+    <div id="root">
+        <img src="https://www.yoox.com/images/yoox80/banners/6821_1_BeachDays_Main_K.jpg?634485886869569819#width=1380&height=637" alt="ERROR">
+        <div class="fun">
+            <div class="one">FUN IN THE SUN</div>
+            <div class="two">Bright tones and tropical prints</div>
+            <div class="shop">
+                <a class="shoponea" href="">
+                    <span class="shopone"><span>SHOP GIRLS</span></span>
+                </a>
+                <a class="shoptwoa" href="">
+                    <span class="shoptwo"><span>SHOP BOYS</span></span>
+                </a>
+            </div>
+        </div>
+        <div id="sec-1">
+             <div class="sec1-p1">
+                   <div class="sec1-p1a1">NEW ARRIVALS GIRLS</div>
+                    <div class="sec1-p1a2"><a href="">VIEW ALL</a></div>
+             </div >
+             <div class="sec1-p2">
+
+             </div>
+        </div>
+
+        <div id="sec-2">
+            <div class="sec1-p1">
+                  <div class="sec1-p1a1">NEW ARRIVALS BOYS</div>
+                   <div class="sec1-p1a2"><a href="">VIEW ALL</a></div>
+            </div >
+            <div class="sec2-p2">
+               
+
+            </div>
+       </div>
+       <div id="sec-3">
+            <div>DESIGNERS</div>
+            <div><span>GIRLS</span>|<span>BOYS</span></div>
+       </div>
+       <div id="sec-4">
+        <div class="sec4-p2">
+            <div class="sec4-p2p1">
+                 <h4>BABY 0-24 MONTHS</h4>
+                 <a href="">DOLCE & GABBANA</a><br>
+                 <a href="">KENZO</a><br>
+                 <a href="">FENDI</a><br>
+                 <a href="">RALPH LAUREN</a><br>
+                 <a href="">BURBERRY</a><br>
+                 <a href="">DSQUARED2</a><br>
+                 <a href="">MONCLER</a><br>
+                 <a href="">ROBERTO CAVALLI</a><br>
+                 <div id="awesome">
+                    <a  href="">VIEW ALL</a>
+                 </div>
+                 
+            </div >
+            <div class="sec4-p2p1">
+                <h4>KIDS 3-8 YEARS</h4>
+                 <a href="">DOLCE & GABBANA</a><br>
+                 <a href="">BURBERRY</a><br>
+                 <a href="">RALPH LAUREN</a><br>
+                 <a href="">NIKE</a><br>
+                 <a href="">TOMMY HILFIGER</a><br>
+                 <a href="">DSQUARED2</a><br>
+                 <a href="">KENZO</a><br>
+                 <a href="">MARNI</a><br>
+                 <div id="awesome">
+                    <a  href="">VIEW ALL</a>
+                 </div>
+            </div >
+            <div class="sec4-p2p1">
+                <h4>JUNIOR 9-16 YEARS</h4>
+                 <a href="">DOLCE & GABBANA</a><br>
+                 <a href="">RALPH LAUREN</a><br>
+                 <a href="">NIKE</a><br>
+                 <a href="">TIMBERLAND</a><br>
+                 <a href="">DSQUARED2</a><br>
+                 <a href="">KENZO</a><br>
+                 <a href="">KARL LAGERFELD</a><br>
+                 <a href="">GIORGIO ARMANI</a><br>
+                 <div id="awesome">
+                    <a  href="">VIEW ALL</a>
+                 </div>
+            </div >
+
+         </div>
+       </div>
+       <div id="sec-5">
+           <div>
+               <img src="https://www.yoox.com/images/yoox80/banners/6821_3_Billieblush_Tris_K.jpg?634485886869569819#width=387&height=540" alt="">
+               <h2>BILLIEBLUSH</h2>
+               <p>Wild and free: discover the new collection</p>
+               <span><a href="">SHOP NOW</a></span>
+           </div>
+           <div>
+            <img src="https://www.yoox.com/images/yoox80/banners/6821_1_GiocoeCasa_tris_K.jpg?634485886869569819#width=430&height=600" alt="">
+            <h2>A WORLD OF FUN</h2>
+            <p>Toys and more</p>
+            <span><a href="">SHOP GIRLS</a> <a href="">SHOP BOYS</a></span>
+           </div>
+           <div>
+            <img src="https://www.yoox.com/images/yoox80/banners/6821_5_Kenzo_Tris_K.jpg?634485886869569819#width=387&height=540" alt="">
+            <h2>KENZO</h2>
+            <p>Iconic style and good vibes for SS22</p>
+            <span><a href="">SHOP GIRLS</a> <a href="">SHOP BOYS</a></span>
+           </div>
+       </div>
+
+       <div id="sec-6">
+        <div class="sec1-p1">
+              <div class="sec1-p1a1">RECENTLY VIEWED</div>
+               <div class="sec1-p1a2"><a href="">VIEW ALL</a></div>
+        </div >
+        <div class="sec6-p2">
+           
+
+        </div>
+   </div>
+
+        <img class="banner2" src="https://www.yoox.com/images/yoox80/banners/6821_1_SummerCamp_Main_K.jpg?634485886869569819#width=1380&height=637"alt="ERROR">
+        <div class="fun">
+            <div class="one">SUMMER ADVENTURES</div>
+            <div class="two">For camp, vacation and beyond</div>
+            <div class="shop">
+                <a class="shoponea" href="">
+                    <span class="shopone"><span>SHOP GIRLS</span></span>
+                </a>
+                <a class="shoptwoa" href="">
+                    <span class="shoptwo"><span>SHOP BOYS</span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="kids.js">
+     
+  
+</script>
