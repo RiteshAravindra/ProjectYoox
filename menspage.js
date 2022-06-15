@@ -268,23 +268,77 @@ document.querySelector('#bottom').append(newDiv)
 
 // bottommid part
 
-// let bottomDiv=document.createElement('div')
-// let bottomImg=document.createElement('img')
-// bottomImg.src="https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886601286852#width=930&height=660"
-// let bottomSmalldiv=document.createElement('div')
-// let bottomh2=document.createElement('h2')
-// bottomh2.innerText="WHERE PEOPLE DANCE"
-// let bottomP=document.createElement('p')
-// bottomP.innerText="Share Your Pride"
-// let linkdiv=document.createElement('div')
-// let a1 = document.createElement('a');
-// let link1 = document.createTextNode("SHOP NOW");
-//         a1.appendChild(link);
-//      a1.href = "google.com"; 
-//      let a2 = document.createElement('a');
-// let link2 = document.createTextNode("GET INSPIRED");
-//         a2.appendChild(link);
-//      a2.href = "google.com"; 
-// linkdiv.append(a1,a2)
-// bottomDiv.append(bottomImg)
-// document.querySelector('#bottomMid').append(bottomDiv,linkdiv)
+let craousaldata1=[
+    {
+        img:"https://www.yoox.com/images/items/12/12792295KA_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"PRINTED CAMP-COLLAR S/SLEEVE OVERSIZE SHIRT",
+        p1:"Patterned shirts",
+        price:"US$ 100,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/46/46851468OR_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"Sunglasses",
+        p1:"",
+        price:"US$ 85,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/13/13773547JN_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"LIGHTWEIGHT DRAWSTING WIDE SHORT",
+        p1:"Shorts & Bermuda",
+        price:"US$ 100,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/16/16098017NW_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"COTTON TIE & DYE PRINTED OVERSIZE TRENCH",
+        p1:"Full-length jackets",
+        price:"US$ 89,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/46/46804502BI_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"SAHARA HAT",
+        p1:"Hat in technical fabric with a drawstring",
+        price:"US$ 16,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/13/13724537RP_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"LINEN REGULAR-FIT CHINO",
+        p1:"Casual pants",
+        price:"US$ 79,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/12/12792275KB_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"PRINTED CAMP-COLLAR S/SLEEVE OVERSIZE SHIRT",
+        p1:"Patterned shirts",
+        price:"US$ 100,00"
+    },
+    {
+        img:"https://www.yoox.com/images/items/17/17206082EF_14_f.jpg?impolicy=crop&width=387&height=490",
+        h4:"8 by YOOX",
+        p:"LEATHER LOW-TOP SNEAKERS",
+        p1:"Sneakers",
+        price:"US$ 69,00"
+    }
+]
+let imgnum=0
+let craousalImg=document.querySelector('#craousal>img')
+let p1=document.querySelector('#craousal>p')
+let buttons=document.querySelectorAll('#craousal>button')
+buttons[0].addEventListener('click',function(){
+   if(imgnum===0){
+    imgnum=craousaldata1.length-1
+   }
+   else{
+    imgnum--;
+   }
+   craousalImg.src=craousaldata1[imgnum].img
+   p1.innerText=craousaldata1[imgnum].p
+   
+
+})
