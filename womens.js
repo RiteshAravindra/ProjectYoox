@@ -1,3 +1,5 @@
+
+
 let data1= [{
     Image_url: "https://www.yoox.com/images/yoox80/banners/6824_1_Trendvacation_WM_Main.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510",
 }];
@@ -57,6 +59,48 @@ price:"$ 1,861.00",
 // }
 ]
 
+let data4=[{
+image_url:"https://www.yoox.com/images/yoox80/banners/6825_1_Vans_Tris_WM.jpg?634485886869569819#width=387&height=540",
+name:"VANS",
+tag:"Iconic models and details",
+},
+{
+image_url:"https://www.yoox.com/images/yoox80/banners/6825_5_Montblanc_W_Tris.jpg?634485886869569819#width=473&height=660",
+name:"MONTBLANC",
+tag:"Father's day find the perfect present",    
+},
+{
+image_url:"https://www.yoox.com/images/yoox80/banners/6825_1_Artifact_Tris.jpg?634485886869569819#width=473&height=660",
+name:"ARTIFACT BY SUPERGA",
+tag:"The value of craftmanship",    
+},]
+
+let data5=[{
+    imageurl:"https://www.yoox.com/images/items/12/12779290QW_14_f.jpg?impolicy=crop&width=306&height=390",
+    name:"SELF-PORTRAIT",
+dresstype:"Tops",
+discount:"$ 690.0050% OFF",
+price:"$ 342.00",
+},
+{
+    imageurl:"https://www.yoox.com/images/items/15/15204227CD_14_f.jpg?impolicy=crop&width=306&height=390",
+    name:"VERSACE",
+dresstype:"Short dresses",
+discount:"$ 2,906.0058% OFF",
+price:"$ 1,200.00",   
+},
+{
+    imageurl:"https://www.yoox.com/images/items/13/13780367GR_14_f.jpg?impolicy=crop&width=306&height=390",
+    name:"PAUL & JOE",
+dresstype:"Midi skirts",
+discount:"$ 316.0048% OFF",
+price:"$ 163.00",    
+}]
+
+let data6=[{
+    imageurl:"https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886869569819#width=930&height=660",
+    }]
+
 displaydata1(data1);
 function displaydata1(data1){
     data1.forEach(function(ele){
@@ -88,10 +132,13 @@ function displaydata1(data1){
     })
    }
 
+   
    displaydata3(data3);
    function displaydata3(data3){
     data3.forEach(function(ele){
       let box=document.createElement("div");
+ 
+      
 
       let pic=document.createElement("img");
       pic.setAttribute("src" , ele.imageurl);
@@ -108,8 +155,67 @@ function displaydata1(data1){
 
       let price=document.createElement("h3");
       price.innerText=ele.price;
-
+      document.querySelectorAll("button")
+      
       box.append(pic,name,dress,disc,price);
       document.querySelector("#third").append(box)
+    })
+    
+   }
+
+   displaydata4(data4);
+   function displaydata4(data4){
+    data4.forEach(function(ele){
+    let box=document.createElement("div");
+
+    let pic=document.createElement("img");
+    pic.setAttribute("src" , ele.image_url);
+
+    let name=document.createElement("h1");
+    name.innerText=ele.name;
+
+    let tagline=document.createElement("p");
+    tagline.innerText=ele.tag;
+
+    box.append(pic,name,tagline);
+    document.querySelector("#fourth").append(box);
+    })
+   }
+
+   displaydata5(data5);
+   function displaydata5(data5){
+    data5.forEach(function(ele){
+        let box=document.createElement("div");
+ 
+      
+
+        let pic=document.createElement("img");
+        pic.setAttribute("src" , ele.imageurl);
+  
+        let name=document.createElement("h2");
+        name.innerText=ele.name;
+  
+        let dress=document.createElement("p");
+        dress.innerText=ele.dresstype;
+  
+        let disc=document.createElement("p");
+        disc.innerText=ele.discount;
+        disc.style.textDecoration="line-through"
+  
+        let price=document.createElement("h3");
+        price.innerText=ele.price;
+        document.querySelectorAll("button")
+        
+        box.append(pic,name,dress,disc,price);
+        document.querySelector("#fifth").append(box)  
+    })
+   }
+
+   displaydata6(data6);
+   function displaydata6(data6){
+    data6.forEach(function(ele){
+        let pic=document.createElement("img");
+        pic.setAttribute("src" , ele.imageurl)
+        document.querySelector("#seven").append(pic);
     })
    }
