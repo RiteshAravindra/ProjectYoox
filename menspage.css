@@ -2,48 +2,84 @@
     margin: 0px;
     padding: 0px;
 }
-#content{
-    height: 5000px;
-    border: 1px solid;
+body{
+    background-color:#f3f3f3;
+    height: 10000px;
+}
+#topbanner>div{
+    width: fit-content;
+    position: relative;
     margin: auto;
 }
-#topbanner{
-position: relative;
-border: 1px solid;
-}
 #topdiv{
-    width: 30%;
-    margin-left: 20px;
-    background-color: white;
-    padding: 15px;
+    width: auto;
     position: absolute;
-    bottom: 20%;
+    background-color: white;
+    bottom: 10px;
+    left: 10px;
+    width: auto;
+    min-width: 380px;
+    padding: 20px 25px;
+}
+#topdiv>a{
+    text-decoration: none;
+    color: black;
 }
 #topdiv>p{
-margin-top: 10px;
-margin-bottom: 10px;
+margin-top: 15px;
+margin-bottom: 20px;
 }
-
 /* middle part */
-
 #midDiv{
-    margin-top: 100px;
+    margin-top: 110px;
     text-align: center;
-    position: relative;
-    border: 1px solid;
+}
+#midDiv>div{
     display: flex;
-    gap: 300px;
+    position: relative;
+    width: fit-content;
+    gap: 250px;
+    margin: auto;
    
 }
-#midDiv>div:last-child{
-    position: absolute;
-    width: 350px;
-    height:500px;
-    bottom: 200px;
-    left: 390px;
+#midDiv1>div:nth-child(1){
     background-color: white;
-    
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    min-width: 340px;
+    width: auto;
+    height: 550px;
+    left: 380px;
+    bottom: 250px;
+}
+#midDiv1>div:nth-child(1)>p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: grey;
+    font-size: 16px;
+}
+#midDiv1>div:nth-child(1)>a:last-child{
+    margin-top: 80px;
+    text-decoration: underline;
+    font-weight: normal;
+    color:grey;
+}
+#midDiv1>div:nth-child(1)>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#midDiv1>div>h1{
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#midDiv1>div>p{
+    font-size: 20px;
+    color: grey;
 }
 /* NEW ARRIVAL PART */
 #midDiv+div{
@@ -51,8 +87,12 @@ margin-bottom: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.header{
+    margin-bottom: 28px;
+    margin-top: 70px;
+    font-size: 32px;
+}
 #newarrival{
-    /* border: 1px solid; */
     margin-top: 100px;
     height: 400px;
     display: flex;
@@ -68,31 +108,39 @@ margin-bottom: 10px;
     text-align: center;
     display: flex;
     margin-top: 200px;
-    margin-bottom: 100px;
-   
-    border: 1px solid green;
+    padding: 100px 0px 50px 0px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 } 
 #secondmid>div{
-    border: 1px solid pink;
+    display: flex;
     margin: auto;
-   
+    gap: 20px;
 }
-#secondmid>div>img{
-    width: 302px;
+#secondmid>div>div>img{
+    width: 350px;
     height: 421px;
 }
-#secondmid>div:nth-child(2){
+#secondmid>div>div:nth-child(2){
     width: 342px;
     position: relative;
-    bottom: 50px;
-
+    bottom: 30px;
 }
-#secondmid>div:nth-child(2)>img{
+#secondmid>div>div:nth-child(2)>img{
 width: 100%;
 height: 477px;
 }
+#secondmid>div>div>h2{
+    margin: 20px 0px 15px 0px;
+}
+#secondmid>div>div>p{
+    color: grey;
+}
 
 /* bottom part */
+#secondmid+div{
+    text-align: center;
+}
 #bottom{
     display: flex;
     text-align: center;
@@ -101,3 +149,50 @@ height: 477px;
     width: 306px;
     height: 390px;
 }
+/* 2nd bottom part */
+#bottomMid>div{
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    display: flex;
+}
+#bottomMid>div>div:nth-child(2){
+    width: auto;
+    position: absolute;
+    background-color: white;
+    bottom: 10px;
+    left: 10px;
+    width: auto;
+    min-width: 380px;
+    padding: 20px 25px;
+}
+
+/* bottom end part */
+#bottomEnd{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+}
+#bottomEnd>div{
+    display: flex;
+    position: relative;
+}
+#bottomEnd>div>div:nth-child(1)>img{
+    width:503px;
+    height: 464px;
+ }
+#bottomEnd>div>div:nth-child(2){
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 20px 25px;
+    width: auto;
+    min-width: 350px;
+}
+#bottomEnd>div>div:nth-child(2)>p{
+    margin: 15px 0px 20px 0px;
+}
+
+ 

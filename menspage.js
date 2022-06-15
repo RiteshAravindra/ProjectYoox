@@ -2,14 +2,20 @@
 let topImage=document.createElement('img')
 topImage.src="https://www.yoox.com/images/yoox80/banners/6895_1_Pride_Main_WM.jpg?634485886601286852#width=1380&height=637"
 let topdiv=document.createElement('div')
+let topdiv1=document.createElement('div')
 topdiv.setAttribute('id',"topdiv")
-let divh3=document.createElement('h3')
+let divh3=document.createElement('h2')
 divh3.innerText="JUST LOVE YOURSELF"
 let divp1=document.createElement('p')
 divp1.innerText="Share Your Pride"
 
-topdiv.append(divh3,divp1)
-document.querySelector('#topbanner').append(topImage,topdiv)
+let a = document.createElement('a');
+let link = document.createTextNode("RIGHT THIS WAY >");
+        a.appendChild(link);
+     a.href = "google.com"; 
+topdiv.append(divh3,divp1,a)
+topdiv1.append(topImage,topdiv)
+document.querySelector('#topbanner').append(topdiv1)
 
 // middle part
 
@@ -25,30 +31,22 @@ let midData1=[
         p:"Balenciaga, Maison Kitsuné, Jacquemus and more"
     }
 ]
-let midData2=["DOLCE & GABBANA","DSQUARED2","ROBERTO CAVALLI","MAISON MARGIELA","KENZO","GUCCI","BALENCIAGA","MARNI","PRADA","CALVIN KLEIN"]
 
 midData1.forEach(function(elem){
     let middiv1=document.createElement('div')
-
-    console.log('hii')
+    let midimgdiv=document.createElement('div')
     let midImg=document.createElement('img')
     midImg.src=elem.img
-    let midH3=document.createElement('h3')
+    let midH3=document.createElement('h1')
     midH3.innerText=elem.h3
     let midP=document.createElement('p')
     midP.innerText=elem.p
-
-    middiv1.append(midImg,midH3,midP)
-    document.querySelector('#midDiv').append(middiv1)
+    midimgdiv.append(midImg)
+    middiv1.append(midimgdiv,midH3,midP)
+    document.querySelector('#midDiv1').append(middiv1)
 })
-let middiv2=document.createElement('div')
-midData2.forEach(function(elem){
-    let p2=document.createElement('p')
-    p2.innerText=elem
-   middiv2.append(p2)
-   document.querySelector('#midDiv').append(middiv2)
+// 
 
-})
 
 // new arrvial part
 let newarrivalData=[
@@ -145,9 +143,9 @@ let newarrivalData=[
         let newp1=document.createElement('p')
         newp1.innerText=elem.p
         let newp2=document.createElement('p')
-        newp1.innerText=elem.mainPrice
+        newp2.innerText=elem.mainPrice
         let newp3=document.createElement('p')
-        newp1.innerText=elem.offerprice
+        newp3.innerText=elem.offerprice
     newDiv.append(newimg,newh2,newp1,newp2,newp3)
     document.querySelector('#newarrival').append(newDiv)
     })
@@ -171,6 +169,7 @@ let secondData=[
         p:"The Value Of Craftmanship"
     }
 ]
+let seconddiv1=document.createElement('div')
 secondData.forEach(function(elem){
     let secondDiv=document.createElement('div')
     let newimg=document.createElement('img')
@@ -180,7 +179,8 @@ secondData.forEach(function(elem){
     let newp1=document.createElement('p')
     newp1.innerText=elem.p
     secondDiv.append(newimg,newh2,newp1)
-    document.querySelector('#secondmid').append(secondDiv)
+    seconddiv1.append(secondDiv)
+    document.querySelector('#secondmid').append(seconddiv1)
 })
 
 // bottom part one of a kind
@@ -254,16 +254,37 @@ bottomdata.forEach(function(elem){
     let newDiv=document.createElement('div')
     let newimg=document.createElement('img')
     newimg.src=elem.img
-    let newh2=document.createElement('h2')
-    newh2.innerText=elem.h2
+    let newh3=document.createElement('h3')
+    newh3.innerText=elem.h3
     let newp1=document.createElement('p')
-    newp1.innerText=elem.p
+    newp1.innerText=elem.p1
     let newp2=document.createElement('p')
-    newp1.innerText=elem.mainPrice
+    newp2.innerText=elem.mainprice
     let newp3=document.createElement('p')
-    newp1.innerText=elem.offerprice
-newDiv.append(newimg,newh2,newp1,newp2,newp3)
+    newp3.innerText=elem.offerprice
+newDiv.append(newimg,newh3,newp1,newp2,newp3)
 document.querySelector('#bottom').append(newDiv)
 })
 
 // bottommid part
+
+// let bottomDiv=document.createElement('div')
+// let bottomImg=document.createElement('img')
+// bottomImg.src="https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886601286852#width=930&height=660"
+// let bottomSmalldiv=document.createElement('div')
+// let bottomh2=document.createElement('h2')
+// bottomh2.innerText="WHERE PEOPLE DANCE"
+// let bottomP=document.createElement('p')
+// bottomP.innerText="Share Your Pride"
+// let linkdiv=document.createElement('div')
+// let a1 = document.createElement('a');
+// let link1 = document.createTextNode("SHOP NOW");
+//         a1.appendChild(link);
+//      a1.href = "google.com"; 
+//      let a2 = document.createElement('a');
+// let link2 = document.createTextNode("GET INSPIRED");
+//         a2.appendChild(link);
+//      a2.href = "google.com"; 
+// linkdiv.append(a1,a2)
+// bottomDiv.append(bottomImg)
+// document.querySelector('#bottomMid').append(bottomDiv,linkdiv)
