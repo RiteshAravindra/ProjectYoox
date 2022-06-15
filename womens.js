@@ -101,6 +101,33 @@ let data6=[{
     imageurl:"https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886869569819#width=930&height=660",
     }]
 
+let data7=[{
+    imageurl:"https://www.yoox.com/images/items/15/15204227CD_14_f.jpg?impolicy=crop&width=306&height=390",
+    name:"VERSACE",
+dresstype:"Short dresses",
+discount:"$ 2,906.0058% OFF",
+price:"$ 1,200.00", 
+},
+{
+    imageurl:"https://www.yoox.com/images/items/12/12779290QW_14_f.jpg?impolicy=crop&width=306&height=390",
+    name:"SELF-PORTRAIT",
+dresstype:"Tops",
+discount:"$ 690.0050% OFF",
+price:"$ 342.00",   
+},
+{
+    imageurl:"https://www.yoox.com/images/items/13/13780367GR_14_f.jpg?impolicy=crop&width=306&height=390",
+    name:"PAUL & JOE",
+dresstype:"Midi skirts",
+discount:"$ 316.0048% OFF",
+price:"$ 163.00",    
+}]
+
+//  let data8=[{
+// image:"https://www.yoox.com/images/yoox80/banners/5460_1_Living_Bottom_WM.jpg?634485886869569819#width=690&height=637",
+//  }];
+
+
 displaydata1(data1);
 function displaydata1(data1){
     data1.forEach(function(ele){
@@ -219,3 +246,41 @@ function displaydata1(data1){
         document.querySelector("#seven").append(pic);
     })
    }
+
+   displaydata(data7);
+   function displaydata(data7){
+    data7.forEach(function(ele){
+        let box=document.createElement("div");
+ 
+      
+
+        let pic=document.createElement("img");
+        pic.setAttribute("src" , ele.imageurl);
+  
+        let name=document.createElement("h2");
+        name.innerText=ele.name;
+  
+        let dress=document.createElement("p");
+        dress.innerText=ele.dresstype;
+  
+        let disc=document.createElement("p");
+        disc.innerText=ele.discount;
+        disc.style.textDecoration="line-through"
+  
+        let price=document.createElement("h3");
+        price.innerText=ele.price;
+        document.querySelectorAll("button")
+        
+        box.append(pic,name,dress,disc,price);
+        document.querySelector("#eight").append(box)  
+    })
+   }
+
+//   displaydata(data8);
+//     function displaydata(data8) {
+//     data8.forEach(function(ele){
+//      let pic=document.createElement("img");
+//     pic.setAttribute("src" , ele.image);
+//     document.querySelector("#ninth").append(pic)    
+//     })    
+//     }
