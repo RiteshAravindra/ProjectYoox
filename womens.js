@@ -138,15 +138,28 @@ function displaydata1(data1){
     })
     
    }
+
    displaydata2(data2);
    function displaydata2(data2){
     data2.forEach(function(ele){
         let box1=document.createElement("div");
+        
+
         let pic= document.createElement("img");
         pic.setAttribute("src" , ele.Image_url)
 
         let name= document.createElement("h1");
         name.innerText=ele.name;
+
+         name.addEventListener("click" , function(){
+            if(addcart1(ele.name)==true){
+              cart.push(ele)
+              localStorage.setItem("UserCart" , JSON.stringify(cart))
+            alert("Item Added Successfully");
+          }  else{
+              alert("Item Already Added")
+          }
+          })
 
         let tag= document.createElement("p");
         tag.innerText=ele.tagline;
@@ -158,6 +171,15 @@ function displaydata1(data1){
         document.querySelector("#second").append(box1);
     })
    }
+   let cart=JSON.parse(localStorage.getItem("UserCart")) || [];
+   function addcart1(naam){
+  for(let i=0;i<cart.length;i++){
+    if(cart[i].name===naam){
+        return false;
+    }
+  }return true;
+}
+   
 
    
    displaydata3(data3);
@@ -165,13 +187,21 @@ function displaydata1(data1){
     data3.forEach(function(ele){
       let box=document.createElement("div");
  
-      
-
       let pic=document.createElement("img");
       pic.setAttribute("src" , ele.imageurl);
 
       let name=document.createElement("h2");
       name.innerText=ele.name;
+
+      name.addEventListener("click" , function(){
+        if(addcart2(ele.name)==true){
+          cart1.push(ele)
+          localStorage.setItem("UserCart1" , JSON.stringify(cart1))
+        alert("Item Added Successfully");
+      }  else{
+          alert("Item Already Added")
+      }
+      })
 
       let dress=document.createElement("p");
       dress.innerText=ele.dresstype;
@@ -189,6 +219,15 @@ function displaydata1(data1){
     })
     
    }
+
+   let cart1=JSON.parse(localStorage.getItem("UserCart1")) || [];
+   function addcart2(naam){
+  for(let i=0;i<cart1.length;i++){
+    if(cart1[i].name===naam){
+        return false;
+    }
+  }return true;
+}
 
    displaydata4(data4);
    function displaydata4(data4){
