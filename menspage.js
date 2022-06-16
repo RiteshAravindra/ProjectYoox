@@ -114,42 +114,87 @@ let newarrivalData=[
         offerprice:"US$ 634,00"
     }
 ]
-// let imgnum=0
-// let button1=document.createElement('button')
-//     button1.innerText="🡢"
-//     let button2=document.createElement('button')
-//     button1.addEventListener('click',decrease())
-//     button2.innerText="🡠"
-//     button2.addEventListener('click',increase())
-    
-// function decrease(){
-//     if(imgnum===0){
-//         img=newarrivalData.length-1
-//     }
-//     else{
-//         imgnum--
-//     }}
-
-
-
-// display(newarrivalData)
-// function display(data){
-    newarrivalData.forEach(function(elem){
-        let newDiv=document.createElement('div')
+    // newarrivalData.forEach(function(elem){
+    //     let newDiv=document.createElement('div')
+    //     let newimg=document.createElement('img')
+    //     newimg.src=elem.img
+    //     let newh2=document.createElement('h2')
+    //     newh2.innerText=elem.h2
+    //     let newp1=document.createElement('p')
+    //     newp1.innerText=elem.p
+    //     let newp2=document.createElement('p')
+    //     newp2.innerText=elem.mainPrice
+    //     let newp3=document.createElement('p')
+    //     newp3.innerText=elem.offerprice
+    // newDiv.append(newimg,newh2,newp1,newp2,newp3)
+    // document.querySelector('#newarrival').append(newDiv)
+    // })
+    let button1=document.createElement('button')
+    button1.innerText="🡢"
+  let imgnum1=0
+  let imgnum2=1
+  let imgnum3=2
+for(let i=0; i<3; i++){
+    let newDiv=document.createElement('div')
         let newimg=document.createElement('img')
-        newimg.src=elem.img
+        newimg.src=newarrivalData[i].img
         let newh2=document.createElement('h2')
-        newh2.innerText=elem.h2
+        newh2.innerText=newarrivalData[i].h2
         let newp1=document.createElement('p')
-        newp1.innerText=elem.p
+        newp1.innerText=newarrivalData[i].p
         let newp2=document.createElement('p')
-        newp2.innerText=elem.mainPrice
+        newp2.innerText=newarrivalData[i].mainPrice
         let newp3=document.createElement('p')
-        newp3.innerText=elem.offerprice
+        newp3.innerText=newarrivalData[i].offerprice
     newDiv.append(newimg,newh2,newp1,newp2,newp3)
-    document.querySelector('#newarrival').append(newDiv)
-    })
-// }
+    document.querySelector('#newarrival').append(newDiv,button1)
+}
+let arrivalimg=document.querySelectorAll('#newarrival>div')
+
+    let img1=arrivalimg[0].querySelector('#newarrival>div>img')
+    let h2_1=arrivalimg[0].querySelector('#newarrival>div>h2')
+    let p1_1=arrivalimg[0].querySelector('#newarrival>div>h2+p')
+    let p1_2=arrivalimg[0].querySelector('#newarrival>div>h2+p+p')
+    let p1_3=arrivalimg[0].querySelector('#newarrival>div>h2+p+p+p')
+
+    let img2=arrivalimg[1].querySelector('#newarrival>div>img')
+    let h2_2=arrivalimg[0].querySelector('#newarrival>div>h2')
+    let p2_1=arrivalimg[0].querySelector('#newarrival>div>h2+p')
+    let p2_2=arrivalimg[0].querySelector('#newarrival>div>h2+p+p')
+    let p2_3=arrivalimg[0].querySelector('#newarrival>div>h2+p+p+p')
+    
+    let img3=arrivalimg[2].querySelector('#newarrival>div>img')
+    let h2_3=arrivalimg[0].querySelector('#newarrival>div>h2')
+    let p3_1=arrivalimg[0].querySelector('#newarrival>div>h2+p')
+    let p3_2=arrivalimg[0].querySelector('#newarrival>div>h2+p+p')
+    let p3_3=arrivalimg[0].querySelector('#newarrival>div>h2+p+p+p')
+
+
+button1.addEventListener('click',function(){
+    if(imgnum1===newarrivalData.length-1){
+        imgnum1=0 
+       }
+       else{
+        imgnum1++;
+       }
+       if(imgnum2===newarrivalData.length-1){
+        imgnum2=0 
+       }
+       else{
+        imgnum2++;
+       }
+       if(imgnum3===newarrivalData.length-1){
+        imgnum3=0 
+       }
+       else{
+        imgnum3++;
+       }
+     img1.src=newarrivalData[imgnum1].img
+     img2.src=newarrivalData[imgnum2].img
+     img3.src=newarrivalData[imgnum2].img
+     h2_1.innerText=newarrivalData[imgnum1].h2
+    
+})
 // second mid part
 
 let secondData=[
@@ -272,56 +317,48 @@ let craousaldata1=[
     {
         img:"https://www.yoox.com/images/items/12/12792295KA_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"PRINTED CAMP-COLLAR S/SLEEVE OVERSIZE SHIRT",
         p1:"Patterned shirts",
         price:"US$ 100,00"
     },
     {
         img:"https://www.yoox.com/images/items/46/46851468OR_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"Sunglasses",
-        p1:"",
+        p1:"Sunglasses",
         price:"US$ 85,00"
     },
     {
         img:"https://www.yoox.com/images/items/13/13773547JN_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"LIGHTWEIGHT DRAWSTING WIDE SHORT",
         p1:"Shorts & Bermuda",
         price:"US$ 100,00"
     },
     {
         img:"https://www.yoox.com/images/items/16/16098017NW_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"COTTON TIE & DYE PRINTED OVERSIZE TRENCH",
         p1:"Full-length jackets",
         price:"US$ 89,00"
     },
     {
         img:"https://www.yoox.com/images/items/46/46804502BI_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"SAHARA HAT",
-        p1:"Hat in technical fabric with a drawstring",
+        p1:"SAHARA HAT",
         price:"US$ 16,00"
     },
     {
         img:"https://www.yoox.com/images/items/13/13724537RP_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"LINEN REGULAR-FIT CHINO",
         p1:"Casual pants",
         price:"US$ 79,00"
     },
     {
         img:"https://www.yoox.com/images/items/12/12792275KB_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"PRINTED CAMP-COLLAR S/SLEEVE OVERSIZE SHIRT",
         p1:"Patterned shirts",
         price:"US$ 100,00"
     },
     {
         img:"https://www.yoox.com/images/items/17/17206082EF_14_f.jpg?impolicy=crop&width=387&height=490",
         h4:"8 by YOOX",
-        p:"LEATHER LOW-TOP SNEAKERS",
         p1:"Sneakers",
         price:"US$ 69,00"
     }
@@ -329,8 +366,9 @@ let craousaldata1=[
 let imgnum=0
 let craousalImg=document.querySelector('#craousal>img')
 let p1=document.querySelector('#craousal>p')
+let p2=document.querySelector('#p2')
 let buttons=document.querySelectorAll('#craousal>button')
-buttons[0].addEventListener('click',function(){
+buttons[1].addEventListener('click',function(){
    if(imgnum===0){
     imgnum=craousaldata1.length-1
    }
@@ -338,7 +376,19 @@ buttons[0].addEventListener('click',function(){
     imgnum--;
    }
    craousalImg.src=craousaldata1[imgnum].img
-   p1.innerText=craousaldata1[imgnum].p
-   
+   p1.innerText=craousaldata1[imgnum].p1
+   p2.innerText=craousaldata1[imgnum].price
 
 })
+buttons[0].addEventListener('click',function(){
+    if(imgnum===craousaldata1.length-1){
+     imgnum=0
+    }
+    else{
+     imgnum++;
+    }
+    craousalImg.src=craousaldata1[imgnum].img
+    p1.innerText=craousaldata1[imgnum].p1
+    p2.innerText=craousaldata1[imgnum].price
+ 
+ })
