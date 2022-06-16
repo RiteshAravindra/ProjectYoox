@@ -47,50 +47,50 @@ let viewdata1=[{
     discount:"$ 3,901.00 42% OFF",
     price:"$ 2,249.00",
 },
-// {
-//     Image:"https://www.yoox.com/images/items/12/12806061rk_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
-//     name:"ONLY",
-//     type:"Tops",
-//     discount:"$ 00.00 0% OFF",
-//     price:"$ 29.00",
-// },
-// {
-//     Image:"https://www.yoox.com/images/items/50/50275072EL_14_f.jpg?impolicy=crop&width=387&height=490",
-//     name:"KURSHUNI",
-//     type:"Ear cuff or single earring",
-//     discount:"$00.00 0% OFF",
-//     price:"$ 32.00",
-// },
-// {
-//     Image:"https://www.yoox.com/images/items/15/15205699CD_14_f.jpg?impolicy=crop&width=387&height=490",
-//     name:"ONLY",
-//     type:"Short dresses",
-//     discount:"$ 00.00 0% OFF",
-//     price:"$ 35.00",
-// },
- ];
-// // {
-// //     Image:"",
-// //     name:"",
-// //     type:"",
-// //     discount:"",
-// //     price:"",
-// // },
-// // {
-// //     Image:"",
-// //     name:"",
-// //     type:"",
-// //     discount:"",
-// //     price:"",
-// // },
-// // {
-// //     Image:"",
-// //     name:"",
-// //     type:"",
-// //     discount:"",
-// //     price:"",
-// // }
-// ];
+{
+    Image:"https://www.yoox.com/images/items/12/12806061rk_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+    name:"ONLY",
+    type:"Tops",
+    discount:"$ 00.00 0% OFF",
+    price:"$ 29.00",
+},
+{
+    Image:"https://www.yoox.com/images/items/50/50275072EL_14_f.jpg?impolicy=crop&width=387&height=490",
+    name:"KURSHUNI",
+    type:"Ear cuff or single earring",
+    discount:"$00.00 0% OFF",
+    price:"$ 32.00",
+},
+{
+    Image:"https://www.yoox.com/images/items/15/15205699CD_14_f.jpg?impolicy=crop&width=387&height=490",
+    name:"ONLY",
+    type:"Short dresses",
+    discount:"$ 00.00 0% OFF",
+    price:"$ 35.00",
+},
+ 
+{
+    Image:"https://www.yoox.com/images/items/13/13791533sm_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+    name:"KURSHUNI",
+     type:"Jumpsuits/one pieces",
+     discount:"$ 3,901.00 42% OFF",
+     price:"$ 2,229.00",
+ },
+ {
+     Image:"https://www.yoox.com/images/items/12/12811664hc_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+    name:"ONLY",
+    type:"Fully Adore",
+    discount:"$ 00.00 0% OFF",
+     price:"$ 50.00",
+ },
+ {
+     Image:"https://www.yoox.com/images/items/17/17248405sq_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+     name:"PIERRE HARDY",
+    type:"Espadrilles",
+    discount:"$ 883.0039% OFF",
+     price:"$ 532.00",
+ }
+];
 
 
 displayViewData1(viewdata1);
