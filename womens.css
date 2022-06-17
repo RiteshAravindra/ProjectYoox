@@ -1,7 +1,168 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
+#main{
+    
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+#mainLoginBar {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(232, 228, 228);
+    background-color: white;
+}
+
+#mainLoginBar>div {
+    margin-left: 540px;
+    width: 50%;
+    height: 30px;
+    border: 1px solid transparent;
+    display: flex;
+}
+
+#mainLoginBar>div>div:nth-child(1) {
+    width: 25%;
+    height: 30px;
+    border: 1px solid transparent;
+}
+
+#mainLoginBar>div>div:nth-child(2) {
+    width: 50%;
+    height: 30px;
+    border: 1px solid transparent;
+    margin-top: -20px;margin-left: -160px;
+}
+
+#mainLoginBar>div>div:nth-child(2)>p {
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(22, 20, 20);
+    font-weight: bold;
+}
+
+#mainLoginBar>div>div:nth-child(3) {
+    width: 25%;
+    height: 30px;
+    border: 1px solid transparent;
+}
+
+#states>span:first-child {
+    font-size: 10px;
+    margin-left: -310px;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#states>span:last-child {
+    font-size: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#login>span:first-child {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+#login>span:last-child {
+    font-size: 10px;
+    text-decoration: underline;
+    margin-left: 6px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#mainLogoBar {
+   
+    height: 90px;
+    width: 100%;
+    width: 100vw;
+    border: 0px solid;
+    background-color: white;
+}
+
+#mainLogoBar>div:first-child {
+    height: 60px;
+    width: 100%;
+    border: 1px solid transparent;
+    margin-left: -240px;
+    gap: 15px;
+}
+
+#mainLogoBar>div:last-child {
+    height: 30px;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 40, 40);
+}
+
+#mainLogoBar>div:last-child>P {
+   margin-top: -10px;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#logo {
+    border: 1px solid transparent;
+    font-size: 12px;
+    display: flex;
+}
+#logo>span{
+    font-weight: bold;
+}
+#logo>span:nth-child(1) {
+    margin-left: 450px;
+    margin-top: 20px;
+}
+#logo>span:nth-child(2),#logo>span:nth-child(3),#logo>span:nth-child(4),#logo>span:nth-child(5) {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#logo>img:nth-child(6){
+    margin-left: 180px;
+    font-size: 30px;
+    font-weight: 100;
+    color: transparent;
+    height: 80%;
+    margin-top: 5px;
+}
+#logo>span:nth-child(7){
+    margin-left: 160px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+#logo>span:nth-child(8){
+    margin-left: 60px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+#logo>span:nth-child(9){
+    margin-left: 60px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
 body{
     background-color: rgb(238, 234, 234);
 }
@@ -13,7 +174,7 @@ body{
 }
 #tag{
     width: 25%;height: 130px;background-color: white;position: absolute;top: 350px;
-    bottom: 10px;
+    bottom: -20px;
 }
 #tag>h1{
     padding-left: 20px;font-weight: lighter;font-size: 25px;
@@ -27,7 +188,7 @@ body{
 
 #designers{
     width: 22%;height: 450px;margin: auto;background-color: white;
-    position: absolute;right: 5px;left: 5px;top: 5px;bottom: -1000px;
+    position: absolute;right: 5px;left: 5px;top: 5px;bottom: -1300px;
 }
 #designers>p{
     font-size: 15px;margin-bottom: -27px;font-weight: bolder;
@@ -155,7 +316,7 @@ h3{
 
 #six{
  width: 230px;height: 400px;margin: auto;background-color: white;
-    position: absolute;right: 240px;bottom: -3450px;
+    position: absolute;right: 240px;bottom: -3600px;
 }
 #six>img{
     height: 50%;width: 80%;margin: auto;
@@ -179,7 +340,7 @@ h3{
 
   #tagline{
      width: 400px;height: 140px;background-color: white;
-    position: absolute;bottom: -3520px;left: 180px;
+    position: absolute;bottom: -3680px;left: 180px;
   }
   #tagline>h1{
     font-size: 27px;text-align: center;margin-left: -22px;
@@ -224,7 +385,7 @@ h3{
 }
 
 #tag2{
-    width: 30%;height: 130px;background-color: white;position: absolute;bottom: -5025px; left: 10px;
+    width: 30%;height: 130px;background-color: white;position: absolute;bottom: -5200px; left: 10px;
     
 }
 #tag2>h1{
@@ -238,11 +399,11 @@ h3{
 }
 
 #tenth{
- width: 690px;;height: 640px;margin-top: 50px;position: absolute;right: 10px;bottom: -5070px;
+ width: 690px;;height: 640px;margin-top: 50px;position: absolute;right: 10px;bottom: -5220px;
 }
 
 #tag3{
-    width: 30%;height: 130px;background-color: white;position: absolute;bottom: -5025px; right: 10px;
+    width: 30%;height: 130px;background-color: white;position: absolute;bottom: -5200px; right: 10px;
     
 }
 #tag3>h1{

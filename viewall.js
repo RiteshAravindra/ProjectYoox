@@ -117,6 +117,15 @@ let box= document.createElement("div");
 
  let name=document.createElement("h2");
  name.innerText=ele.name;
+ name.addEventListener("click" , function(){
+    if(addtocart(ele.name)==true){
+        datauser.push(ele);
+        localStorage.setItem("Orderlist" , JSON.stringify(datauser));
+        alert("Item Added Successfully");
+    }else{
+        alert("Item Already Added");
+    }
+ })
 
 let dresstype=document.createElement("p");
  dresstype.innerText=ele.type;
@@ -132,4 +141,13 @@ let dresstype=document.createElement("p");
  
  document.querySelector("#teen2>div").append(box)
     })
+}
+
+let datauser=JSON.parse(localStorage.getItem("Orderlist")) || [];
+function addtocart(naam){
+for(let i=0;i<datauser.length;i++){
+    if(datauser[i].name===naam){
+        return false;
+    }
+}return true;
 }
