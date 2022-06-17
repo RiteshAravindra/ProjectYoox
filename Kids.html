@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kids | Clothing</title>
 </head>
 <style>
     *{
@@ -251,9 +251,30 @@
        margin-top: 80px;
    }
 
-
-
-  
+ .prev{
+     border: 1px solid red;
+     position: absolute;
+     margin-left: -25px;
+     margin-top: 220px;
+     padding: 16px;
+     background-color:rgba(224,68, 68);
+     border-radius: 10px;
+ }
+ .next{
+     border: 1px solid red;
+     position: absolute;
+     margin-left: 990px;
+     margin-top: 220px;
+     padding: 16px;
+     background-color:rgba(224, 68, 68);
+     border-radius: 10px;
+ }
+ .prev:hover, .next:hover {
+  background-color: rgba(20, 243, 35, 0.8);
+}
+.sec1-p2>div:hover{
+    cursor: pointer;
+}
    
     
 </style>
@@ -275,10 +296,11 @@
         <div id="sec-1">
              <div class="sec1-p1">
                    <div class="sec1-p1a1">NEW ARRIVALS GIRLS</div>
-                    <div class="sec1-p1a2"><a href="">VIEW ALL</a></div>
+                    <div class="sec1-p1a2"><a href="girlsva.html">VIEW ALL</a></div>
              </div >
              <div class="sec1-p2">
-
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
              </div>
         </div>
 
