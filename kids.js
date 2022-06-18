@@ -1,4 +1,4 @@
-let data=JSON.parse(localStorage.getItem("boyssdata"))||[];
+let data=JSON.parse(localStorage.getItem("Orderlist"))||[];
 
 let obj1=[{image:"https://www.yoox.com/images/items/12/12772190KA_14_f.jpg?impolicy=crop&width=306&height=390",Brand:"OFF-WHITE KIDS",Catagory:"T-shirt",Discount:"42% OFF",Price:"$ 132.00"},
 {image:"https://www.yoox.com/images/items/47/47307190BU_14_f.jpg?impolicy=crop&width=306&height=390",Brand:"BANANA MOON",Catagory:"One-piece swimsuits",Discount:"41% OFF",Price:"$ 46.00"},
@@ -96,12 +96,13 @@ obj3.forEach(function(el){
 
 function local(el){
     data.push(el)
-    localStorage.setItem("girlssdata",JSON.stringify(data))
-    console.log(el)
+    localStorage.setItem("Orderlist",JSON.stringify(data))
+    alert("item added successfully")
 }
 
 function localee(el){
     data.push(el)
-    localStorage.setItem("boyssdata",JSON.stringify(data))
+    localStorage.setItem("Orderlist",JSON.stringify(data))
+    alert("item added successfully")
     console.log(el)
 }

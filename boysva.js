@@ -1,5 +1,5 @@
 
-let data=JSON.parse(localStorage.getItem("boysvadata"))||[];
+let data=JSON.parse(localStorage.getItem("Orderlist"))||[];
 let obj1=[{image:"https://www.yoox.com/images/items/12/12826937kt_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",Brand:"MARCELO BURLON",Catagory:"T-shirt",Discount:"42% OFF",Price:104.00},
     {image:"https://www.yoox.com/images/items/49/49767439xt_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",Brand:"NIKE",Catagory:"B NSW TIE DYE TEE + SHORT SET",Discount:"41% OFF",Price:47.00},
     {image:"https://www.yoox.com/images/items/17/17283325hr_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",Brand:"ADDIDAS ORIGINALS",Catagory:"Sneakers",Discount:"27% OFF",Price:60.00},
@@ -73,7 +73,7 @@ console.log(display(obj1))
 
 function local(el){
    data.push(el)
-   localStorage.setItem("boysvadata",JSON.stringify(data))
+   localStorage.setItem("Orderlist",JSON.stringify(data))
 }
 
 function handlefilter(){

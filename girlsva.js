@@ -1,5 +1,5 @@
 
-let data=JSON.parse(localStorage.getItem("girlsvadata"))||[];
+let data=JSON.parse(localStorage.getItem("Orderlist"))||[];
 let obj1=[{image:"https://www.yoox.com/images/items/12/12772190KA_14_f.jpg?impolicy=crop&width=306&height=390",Brand:"OFF-WHITE KIDS",Catagory:"T-shirt",Discount:"42% OFF",Price:132.00},
     {image:"https://www.yoox.com/images/items/47/47307190BU_14_f.jpg?impolicy=crop&width=306&height=390",Brand:"BANANA MOON",Catagory:"One-piece swimsuits",Discount:"41% OFF",Price:46.00},
     {image:"https://www.yoox.com/images/items/15/15215382cq_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",Brand:"STELLA McCARTNEY KIDS",Catagory:"Dresses",Discount:"27% OFF",Price:129.00},
@@ -73,7 +73,7 @@ console.log(display(obj1))
 
 function local(el){
    data.push(el)
-   localStorage.setItem("girlsvadata",JSON.stringify(data))
+   localStorage.setItem("Orderlist",JSON.stringify(data))
 }
 
 function handlefilter(){
