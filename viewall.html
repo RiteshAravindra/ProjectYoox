@@ -48,7 +48,7 @@
         }
         #teen2>div{
             width: 100%;height: 50%;margin-bottom: 10px;
-            display: grid; grid-template-columns: repeat(3,30%);
+            display: grid; grid-template-columns: repeat(3,1fr);
             grid-template-rows: 100%;margin-bottom: 20px;justify-content: space-between;
         }
         #teen2>div>div{
@@ -82,10 +82,10 @@
 
      <div><p>100+items</p></div>
 
-     <div><select name="" id="select">
-     <option value="">SORT BY ▼</option>
-     <option value="">HIGHEST PRICE</option>
-     <option value="">LOWEST PRICE</option>
+     <div><select name="" id="select" onchange="sortarray()">
+     <option value="ALL">SORT BY  ▼</option>
+     <option value="HP">HIGHEST PRICE</option>
+     <option value="LP">LOWEST PRICE</option>
      </select></div>
      </div>
 
