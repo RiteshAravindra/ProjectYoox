@@ -80,15 +80,76 @@
    }
 
    #four{
-    border: 1px solid red;width: 100%;height: 150px;
+    border: 1px solid red;width: 100%;height: 150px;margin-top: 10px;
    }
    #four>div{
-    border: 1px solid black;height: 100%;width: 100%;display: flex;justify-content: space-between;
+    border: 1px solid black;height: 100%;width: 100%;display: flex;justify-content: space-around;
    }
    #four>div>img{
     height: 110px;width: 80px;
    }
+   #four>div>button{
+    border: 1px solid red;height: 30%;width: 110px;background-color: red;color: white;
+   }
+  
+
+   #five{
+    border: 1px solid red;height: 60px;width: 85%;margin: auto; background-color: rgb(230, 219, 219);display: flex;
+    align-items: center;font-weight: bold;padding-left: 80px;
    
+   }
+
+   #six{
+    border: 1px solid red;height: 60px;width: 92%;margin: auto;background-color: rgb(255, 255, 91);display: flex;
+    align-items: center;font-weight: bold;text-align: center;margin-top: 30px;
+   }
+   #seven{
+    border: 1px solid red;height: auto;width: 30%;margin-top: 20px;margin-left: 70px;font-weight: bold;font-size: 25px;
+   }
+
+   #eight{
+    border: 1px solid red;width: 350px;height: 80px;margin-left: 70px;margin-top: 20px;
+   }
+   #eight>div:nth-child(1){
+   border: 1px solid red;width: 210px;height: auto; background-color:  rgb(255, 255, 52);
+   font-weight: bold;
+   }
+   #eight>p+p{
+    color: teal;margin-top: 5px;
+   }
+
+   #nine{
+    border: 1px solid red;width: 200px;height: 60px;margin-left: 70px;margin-top: 20px;
+   }
+   #nine>div{
+    font-weight: bold;
+   }
+
+   #ten{
+    border: 1px solid red ;width: 86%;height: auto;margin-left: 70px;
+   }
+
+   #eleven{
+    border: 1px solid green;width: 40%;height: 100px;margin-top: 20px;margin-left: 70px;
+    display: flex;
+   }
+   #eleven>div>h3{
+   margin-left: 10px;
+   }
+   #eleven>div>p{
+    border: 1px solid red;width: 85%;height: auto;margin-top: 10px;margin-left: 10px;
+   }
+
+   #twelve{
+    border: 1px solid transparent;width: 90%;height: 2px; background-color: silver;margin: auto;margin-top: 20px;
+   }
+
+   #thirteen{
+    border: 1px solid red;width: 90%;height: 50px;background-color: silver;margin: auto;margin-top: 20px;
+    display: flex;justify-content: center;align-items: center;
+    justify-content: space-between;
+   }
+  
 
     </style>
 </head>
@@ -118,9 +179,43 @@
         </div>
     </div>
 
-    <h1 id="heading">ITEMS ADDED TO YOUR SHOPPING BAG</h1>
+    <h1 id="heading"><span>1</span> <span>|</span> <span>ITEMS ADDED TO YOUR SHOPPING BAG</span></h1>
 
     <div id="four"></div>
+
+    <div id="five">⚪ BUYING A GIFT?</div>
+
+    <div id="six">FREE STANDARD SHIPPING ON ORDERS OVER $100</div>
+
+    <div id="seven"><span>2</span> <span>|</span> <span> SELECT SHIPPING METHOD</span></div>
+
+    <div id="eight">
+        
+        <div><input type="radio"> <span>STANDARD -</span> <span style="text-decoration: line-through;">$ 9.95</span> <span>FREE</span></div>
+        <p>12-15 business days</p>
+        <p>6 times less CO2 emissions than Express shipping</p>
+    </div>
+
+    <div id="nine">
+        <div><input type="radio"><span>EXPRESS - $ 19.95</span></div>
+        <p>2-4 business days</p>
+    </div>
+
+    <div id="ten">Most products ship from our warehouse in Italy. Due to the time difference between North America and Europe, delivery time will start one business day after your order is placed. <span style="font-weight: bold;">Click here to see the days on which we do not ship.</span></div>
+
+    <div id="eleven">
+    <div>
+        <h3>ECOBOX</h3>
+        <p>YOOX’s packaging is made entirely from recyclable materials and is internationally certified by RESY, FSC, PEFC and SFI for environmental, social and economic sustainability.</p>
+    </div>
+    </div>
+
+    <div id="twelve"></div>
+
+    <div id="thirteen">
+        <div><span style="font-weight: bold; margin-left: 10px;margin-right: 5px;">YOOXCODE</span> <span>Use your personal YOOXCODE to access exclusive promotions</span> </div>
+        <div><span style="margin-right: 5px;font-weight: bold;">ENTER YOUR CODE</span> <span style="margin-right: 10px;font-size: 25px;font-weight: bold;">+</span> </div>
+    </div>
 </body>
 </html>
 

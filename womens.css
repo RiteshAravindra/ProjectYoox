@@ -8,6 +8,7 @@
     margin-bottom: 10px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #mainLoginBar {
@@ -175,8 +176,8 @@ body{
     width: 100%;height: 100%;
 }
 #tag{
-    width: 25%;height: 130px;background-color: white;position: absolute;top: 350px;
-    bottom: -20px;
+    width: 25%;height: 130px;background-color: white;position: absolute;
+    bottom: 10px;
 }
 #tag>h1{
     padding-left: 20px;font-weight: lighter;font-size: 25px;
