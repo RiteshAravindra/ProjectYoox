@@ -8,6 +8,7 @@
     width: 100%;
     position: sticky;
     top: 0;
+    z-index:100;
 }
 #header>div{
     width: fit-content;
@@ -19,7 +20,6 @@
 }
 body{
     background-color: #f3f3f3;
-    height: 1500px;
     position: relative;
 }
 #body{
@@ -46,7 +46,10 @@ margin-top: 30px;
 #topdiv>div:last-child{
     padding: 0px 0px 20px 25px;
 }
-
+#topdiv>div>a{
+    text-decoration: none;
+    color: black;
+}
 form{
     background-color: white;
     margin-top: 20px;
@@ -96,6 +99,37 @@ position: relative;
 #cartdetails>div>p{
     color: grey;
 }
-hr{
+#cartdetails>hr{
     margin-top: 25px;
+}
+#qa{
+padding: 60px 130px;
+margin: auto;
+margin-top: 50px;
+background-color: white;
+}
+#qa>h1{
+    margin-bottom: 20px;
+}
+#qa>div>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+#end{
+    padding: 40px;
+    border: 1px solid;
+    margin: auto;
+    background-color: #333333;
+    color: white;
+}
+
+#end>div{
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+#end>div>p:first-child{
+    text-decoration: underline;
 }

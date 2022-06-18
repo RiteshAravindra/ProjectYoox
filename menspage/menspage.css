@@ -6,6 +6,72 @@ body{
     background-color:#f3f3f3;
 }
 /* header */
+#navbar{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+    font-size: 13px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#topline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    justify-content:space-between;
+    padding: 5px 20px 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#topline>div:first-child{
+    display: flex;
+    gap: 20px;
+    text-decoration: underline;
+}
+#topline>div:last-child{
+    display: flex;
+    gap: 20px;
+}
+#topline>div:last-child>a{
+    text-decoration: none;
+    color: black;
+}
+#middleline{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+#middleline>div:nth-child(2)>img{
+width: 80px;
+margin-right:130px ;
+}
+#middleline>div:first-child>a{
+   margin-left: 15px;
+   text-decoration: none;
+   color: black;
+}
+#middleline>div:last-child>a{
+    margin-right: 50px;
+}
+#last{
+padding: 10px;
+background-color:#333333;
+}
+#last>div{
+/* margin-left:60px; */
+width: fit-content;
+margin: auto;
+}
+#last>div>a{
+margin-right: 10px;
+text-decoration: none;
+color: white;
+}
 /* header end */
 #topbanner>div{
     width: fit-content;
