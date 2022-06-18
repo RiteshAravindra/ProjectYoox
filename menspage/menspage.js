@@ -507,6 +507,7 @@ let craousalImg=document.querySelector('#craousal>img')
 let p1=document.querySelector('#craousal>p')
 let p2=document.querySelector('#p2')
 let buttons=document.querySelectorAll('#bottomMid>div>button')
+
 buttons[1].addEventListener('click',function(){
    if(imgnum===0){
     imgnum=craousaldata1.length-1
@@ -514,6 +515,7 @@ buttons[1].addEventListener('click',function(){
    else{
     imgnum--;
    }
+   console.log(imgnum)
    craousalImg.src=craousaldata1[imgnum].img
    p1.innerText=craousaldata1[imgnum].p1
    p2.innerText=craousaldata1[imgnum].price
@@ -526,6 +528,7 @@ buttons[0].addEventListener('click',function(){
     else{
      imgnum++;
     }
+    console.log(imgnum)
     craousalImg.src=craousaldata1[imgnum].img
     p1.innerText=craousaldata1[imgnum].p1
     p2.innerText=craousaldata1[imgnum].price
