@@ -122,8 +122,10 @@ let box= document.createElement("div");
         datauser.push(ele);
         localStorage.setItem("Orderlist" , JSON.stringify(datauser));
         alert("Item Added Successfully");
+        window.location.href="file:///C:/Users/HP/Desktop/ProjectYoox/Addtocart.html";
     }else{
         alert("Item Already Added");
+        window.location.href="file:///C:/Users/HP/Desktop/ProjectYoox/Addtocart.html";
     }
  })
 

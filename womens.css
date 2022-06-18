@@ -6,7 +6,8 @@
     
     width: 100%;
     margin-bottom: 10px;
-    
+    position: sticky;
+    top: 0;
 }
 
 #mainLoginBar {
@@ -14,7 +15,7 @@
     height: 30px;
     border: 1px solid rgb(232, 228, 228);
     background-color: white;
-    position: sticky;
+   
 }
 
 #mainLoginBar>div {
