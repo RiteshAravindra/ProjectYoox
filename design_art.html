@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOOX Art & Design | Design objects, art and home decor</title>
+    <style>
+      #page {
+        cursor: pointer;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        /* width: 80%; */
+      }
+      .container {
+        /* border: 1px solid black; */
+        width: 90%;
+        display: flex;
+        margin: auto;
+        gap: 20px;
+      }
+      div > div > div > h1 {
+        text-align: center;
+        color: #333333;
+      }
+      #page p {
+        color: #b0bcc2;
+      }
+
+      #mainfooter {
+        margin: auto;
+        background-image: url("https://www.yoox.com/images/yoox80/banners/6769_1_DesignArt_BOTTOM.jpg?634485886601286852#width=1348&height=320");
+        height: 300px;
+        width: 89%;
+        text-align: center;
+        color: white;
+      }
+      #mainfooter > h1 {
+        padding-top: 100px;
+      }
+      #page a {
+        color: white;
+      }
+      #bottom {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #bottom > div > img {
+        width: 70%;
+        display: block;
+        margin: auto;
+      }
+      #bottom > div > h1 {
+        font-size: 18px;
+        text-align: center;
+      }
+      #bottom > div > p {
+        text-align: center;
+        color: #333333;
+      }
+      h1 {
+        text-align: center;
+        font-size: 20px;
+      }
+      #top {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      #head {
+        text-align: center;
+      }
+      #tag {
+        font-size: 50px;
+      }
+      #section > img {
+        display: block;
+        margin: auto;
+      }
+      #sec > h1 {
+        font-size: 28px;
+      }
+      #sec > p {
+        text-align: center;
+        color: #a4a8bd;
+      }
+      #minimal {
+        /* border: 1px solid red; */
+        width: 90%;
+        height: 1000px;
+        margin: auto;
+      }
+      #minimal > div > h1 {
+        text-align: start;
+        margin-left: 100px;
+      }
+      #minimal > div > p {
+        margin-left: 80px;
+      }
+      #minimal > div:nth-child(3) {
+        position: absolute;
+        margin-top: -300px;
+        padding-left: 650px;
+      }
+      #minimal > div:nth-child(4) > h1 {
+        text-align: end;
+        margin-top: 450px;
+        margin-right: 300px;
+      }
+      #minimal > div:nth-child(4) > p {
+        text-align: end;
+        margin-right: 292px;
+      }
+      #picked > div > img {
+        position: absolute;
+        margin-top: -450px;
+        margin-left: 60px;
+      }
+      #picked > div:nth-child(2) > h1 {
+        text-align: start;
+        padding-top: 120px;
+        margin-left: 120px;
+      }
+      #picked > div:nth-child(2) > p {
+        text-align: start;
+        margin-left: 100px;
+      }
+      /* NAV BAR */
+
+      #navbar {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: auto;
+        font-size: 13px;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+      }
+      #topline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid; */
+        justify-content: space-between;
+        padding: 5px 20px 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      #topline > div:first-child {
+        display: flex;
+        gap: 20px;
+        text-decoration: underline;
+      }
+      #topline > div:last-child {
+        display: flex;
+        gap: 20px;
+      }
+      #topline > div:last-child > a {
+        text-decoration: none;
+        color: black;
+      }
+      #middleline {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid; */
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+      }
+      #middleline > div:nth-child(2) > img {
+        width: 80px;
+        margin-right: 130px;
+      }
+      #middleline > div:first-child > a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: black;
+      }
+      #middleline > div:last-child > a {
+        margin-right: 50px;
+      }
+      #last {
+        padding: 10px;
+        background-color: #333333;
+      }
+      #last > div {
+        /* margin-left:60px; */
+        width: fit-content;
+        margin: auto;
+      }
+      #last > div > a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: white;
+      }
+      /* NAV BAR ENDED */
+
+      /* FOOTER */
+      #upperFooter {
+        width: 100%;
+        height: auto;
+        border: 1px solid transparent;
+
+        background-color: rgb(236, 231, 231);
+        display: flex;
+        justify-content: center;
+      }
+
+      #upperFooter > div {
+        width: 200px;
+        height: 500px;
+        margin-top: 60px;
+        border: 1px solid transparent;
+        padding: 35px;
+        box-sizing: border-box;
+      }
+
+      #upperFooter > div:nth-child(3) {
+        width: 300px;
+        background-color: rgb(255, 247, 247);
+        margin-top: 100px;
+        height: 470px;
+        margin-bottom: 50px;
+      }
+
+      /* #upperFooter>div:nth-child(3)>div {
+            height: 400px;
+            width: 250px;
+            margin: auto;
+            border: 1px solid;
+            box-sizing: border-box;
+        } */
+
+      #upperFooter > div > h4 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #upperFooter > div > li {
+        list-style: none;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      #upperFooter > div > li > a {
+        text-decoration: none;
+        color: rgb(64, 62, 62);
+      }
+
+      hr {
+        border: 1px solid;
+        margin: 0 auto;
+        width: 33px;
+      }
+      #footer {
+        width: 100%;
+        height: 60px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(236, 231, 231);
+      }
+      #footer > div {
+        width: 30%;
+        height: 60px;
+        border: 1px solid transparent;
+        display: flex;
+      }
+      #footer > div:nth-child(2) {
+        justify-content: flex-end;
+      }
+      #footer > div > p {
+        margin-top: 23px;
+        font-size: 12px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .socialMediaLogo {
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+      .mobileLogo {
+        height: 45px;
+        margin-top: 5px;
+        padding-right: 10px;
+      }
+      #mainFooter {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(65, 61, 61);
+        box-sizing: border-box;
+      }
+      #mainFooter > p {
+        color: #fff;
+        text-align: center;
+        padding-top: 70px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 13px;
+      }
+      #mainFooter > span:nth-child(2) {
+        color: #fff;
+        padding: 0px;
+        margin-left: 40%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 13px;
+      }
+      #mainFooter > span:nth-child(3) {
+        color: #fff;
+        padding: 0px;
+        margin-left: 2%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 13px;
+      }
+      #mainFooter > span:nth-child(4) {
+        color: #fff;
+        padding: 0px;
+        margin-left: 2%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 13px;
+      }
+      #yooxNews {
+        height: 400px;
+        width: 250px;
+        margin-left: -10px;
+        border: 1px solid transparent;
+      }
+      #yooxNews > div {
+        margin-left: 110px;
+        margin-top: 15px;
+        font-size: 30px;
+      }
+      #yooxNews > h3 {
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: rgb(26, 25, 25);
+      }
+      #yooxNews > p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: rgb(26, 25, 25);
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(26, 25, 25);
+      }
+      #yooxNews > form > input:nth-child(1) {
+        height: 50px;
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 10px;
+        border: transparent;
+        background-color: rgb(235, 228, 228);
+      }
+      #yooxNews > form > input:nth-child(2) {
+        margin-top: 20px;
+        margin-left: 30px;
+        font-weight: bold;
+      }
+      #yooxNews > form > input:nth-child(3) {
+        margin-top: 16px;
+        margin-left: 30px;
+      }
+      #yooxNews > form > button {
+        height: 50px;
+        width: 100%;
+        color: white;
+        background-color: rgb(34, 33, 33);
+        border: none;
+        margin-top: 6px;
+      }
+      #yooxNews > form > p {
+        margin-left: 25px;
+        margin-top: -50px;
+        color: gray;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        line-height: 16px;
+      }
+      #yooxNews > form > span > input {
+        margin-top: 50px;
+      }
+      /* FOOTER Ended */
+    </style>
+  </head>
+  <body>
+    <!-- NAV BAR HTML -->
+    <div id="navbar">
+      <div id="topline">
+        <div>
+          <p>INDIA ▼</p>
+          <p>COUSTOMER CARE</p>
+        </div>
+        <div>
+          <!-- <p>FREE STANDARD SHIPPING ON ORDERS OVER $100</p> -->
+        </div>
+        <div>
+          <a href="">🖍REGISTER</a>
+          <a href="">🔓LOG IN</a>
+        </div>
+      </div>
+      <div id="middleline">
+        <div>
+          <a href="">WOMEN</a>
+          <a href="">MEN</a>
+          <a href="">KIDS</a>
+          <a href="">DESIGEN ART</a>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <a href="">🔍</a>
+          <a href="">🤍</a>
+          <a href="">👜</a>
+        </div>
+      </div>
+      <div id="last">
+        <div>
+          <!-- <a href="">NEW ARRIVALS</a>
+          <a href="">DESIGNERS</a>
+          <a href="">CLOTHING</a>
+          <a href="">SHOES</a>
+          <a href="">ACCESSORIES & BAGS</a> -->
+          <a href="">DESIGN</a>
+          <a href="">ART</a>
+          <a href="">COLLABORATIONS </a>
+          <!-- <a href="">BEST DEALS</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV  Bar Ended -->
+    <div id="page">
+      <div class="container">
+        <div>
+          <img
+            src="https://www.yoox.com/images/yoox80/banners/6769_1_MultiformProd_TOP1.jpg?634485886601286852#width=890&height=648"
+            alt="img"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/yoox80/banners/6769_1_GenzDesign_TOP2.jpg?634485886601286852#width=431&height=450"
+            alt="img2"
+          />
+          <div id="head">
+            <h1>IN MY ROOM</h1>
+            <p>Decorate your space with cool creations and colors</p>
+          </div>
+        </div>
+      </div>
+      <h1 id="tag">
+        "The concept of fluidity has become a guiding principle in how the new
+        generations redefine the world and experience it."
+      </h1>
+      <div id="section">
+        <img
+          src="https://www.yoox.com/images/yoox80/banners/6769_23_Living_Middle.jpg?634485886601286852#width=897&height=615"
+          alt=""
+        />
+      </div>
+      <div id="sec">
+        <h1>CRAZY MOOD</h1>
+        <p>The new photoshoot by Living Corriere</p>
+      </div>
+      <div id="minimal">
+        <div>
+          <img
+            src="https://www.yoox.com/images/yoox80/banners/6769_1_MinimalVSPop_Compo01.jpg?634485886601286852#width=431&height=450"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1>MINIMAL OR POP?</h1>
+          <p>Our edit has something for everyone</p>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/yoox80/banners/6769_2_Seletti_Compo3.jpg?634485886601286852#width=720&height=700"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1>SELETTI</h1>
+          <p>Pure creativity</p>
+        </div>
+      </div>
+
+      <div id="picked">
+        <div>
+          <img
+            src="https://www.yoox.com/images/yoox80/banners/6769_2_PickedByNina_Compo2.gif?634485886601286852#width=542&height=542"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1>PICKED BY NINA X YOOX</h1>
+          <p>A unprecedented project of collectible design</p>
+        </div>
+      </div>
+
+      <h1 id="top">TOP PICKS</h1>
+      <div id="bottom">
+        <div>
+          <img
+            src="https://www.yoox.com/images/items/58/58056214UK_14_f.jpg?impolicy=crop&width=306&height=390"
+            alt=""
+          />
+          <h1>CASSINA</h1>
+          <p>Mirror</p>
+          <p>US$ 2,778,00</p>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/items/58/58053621MR_14_f.jpg?impolicy=crop&width=306&height=390"
+            alt=""
+          />
+          <h1>MISSONI HOME</h1>
+          <p>Pillow or pillow case</p>
+          <p>US$ 329,00</p>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/items/58/58055684NC_14_f.jpg?impolicy=crop&width=306&height=390"
+            alt=""
+          />
+          <h1>NILUFAR - PICKED BY NINA</h1>
+          <p>Art Object</p>
+          <p>US$ 2,580,00</p>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/items/58/58055671EH_14_f.jpg?impolicy=crop&width=306&height=390"
+            alt=""
+          />
+          <h1>NILUFAR - PICKED BY NINA</h1>
+          <p>Art Object</p>
+          <p>US$ 991,00</p>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/items/58/58056219WU_14_f.jpg?impolicy=crop&width=306&height=390"
+            alt=""
+          />
+          <h1>CASSINA</h1>
+          <p>Container or basket</p>
+          <p>US$ 1,074,00</p>
+        </div>
+        <div>
+          <img
+            src="https://www.yoox.com/images/items/58/58055674HK_14_f.jpg?impolicy=crop&width=306&height=390"
+            alt=""
+          />
+          <h1>NILUFAR - PICKED BY NINA</h1>
+          <p>Vase</p>
+          <p>US$ 1,612,00</p>
+        </div>
+      </div>
+
+      <div id="mainfooter">
+        <!-- <img src="https://www.yoox.com/images/yoox80/banners/6769_1_DesignArt_BOTTOM.jpg?634485886601286852#width=1348&height=320" alt=""> -->
+        <h1>DESIGN+ART</h1>
+        <p>Protagonists,stories,collaborations,project.</p>
+        <a href="">SEE ALL</a>
+      </div>
+    </div>
+    <!-- FOOTER START -->
+    <div id="upperFooter">
+      <div>
+        <h4>NEW TO YOOX</h4>
+        <br />
+        <hr />
+        <li>
+          <a href="">Shopping guide</a>
+        </li>
+        <li>
+          <a href="">iPhone/iPad/Android</a>
+        </li>
+        <li>
+          <a href="">
+            <div>Browse all Designers</div>
+          </a>
+        </li>
+        <li>
+          <a href="">Browse all Categories</a>
+        </li>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <br />
+        <hr />
+        <li>
+          <a href="">Shipping times & costs</a>
+        </li>
+        <li>
+          <a href="">Payments and web security</a>
+        </li>
+        <li>
+          <a href="">Product quality</a>
+        </li>
+        <li>
+          <a href="">Track your order</a>
+        </li>
+        <li>
+          <a href="">Returns & refunds</a>
+        </li>
+        <li>
+          <a href="">FAQs</a>
+        </li>
+        <li>
+          <a href="">Size Guide</a>
+        </li>
+      </div>
+      <div>
+        <div id="yooxNews">
+          <div>✉</div>
+          <h3>YOOX NEWS</h3>
+          <p>
+            Sign up for the newsletter <br />ans discover the latest arrivals
+            and promotions
+          </p>
+          <form action="">
+            <input type="text" placeholder="INSERT YOUR E-MAIL ADDRESS" />
+            <input type="radio" /> MAN <input type="radio" /> WOMAN
+            <br />
+            <span><input type="checkbox" /></span>
+            <p>
+              I consent to receive YOOX newsletters via email. For further
+              information, please consult the Privacy Policy.
+            </p>
+            <br />
+            <button>SIGN UP</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h4>MYOOX</h4>
+        <br />
+        <hr />
+        <li>
+          <a href="">Login</a>
+        </li>
+        <li>
+          <a href="">My Orders</a>
+        </li>
+        <li>
+          <a href="">My Details</a>
+        </li>
+        <li>
+          <a href="">Dream Box</a>
+        </li>
+        <li>
+          <a href="">Première</a>
+        </li>
+      </div>
+      <div>
+        <h4>ABOUT US</h4>
+        <br />
+        <hr />
+        <li>
+          <a href="">C ompany Info</a>
+        </li>
+        <li>
+          <a href="">Press</a>
+        </li>
+        <li>
+          <a href="">Affiliation</a>
+        </li>
+        <li>
+          <a href="">Careers</a>
+        </li>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <p>
+          <span>CONTACT WITH US</span>
+        </p>
+
+        <span>
+          <img
+            class="socialMediaLogo"
+            src="	https://www.yoox.com/media/yoox16/icons/social/normal/Facebook@svg.svg"
+            alt=""
+          />
+        </span>
+        <span>
+          <img
+            class="socialMediaLogo"
+            src="	https://www.yoox.com/media/yoox16/icons/social/normal/Twitter@svg.svg"
+            alt=""
+          />
+        </span>
+
+        <span>
+          <img
+            class="socialMediaLogo"
+            src="	https://www.yoox.com/media/yoox16/icons/social/normal/Youtube@svg.svg"
+            alt=""
+          />
+        </span>
+        <span>
+          <img
+            class="socialMediaLogo"
+            src="	https://www.yoox.com/media/yoox16/icons/social/normal/Instagram@svg.svg"
+            alt=""
+          />
+        </span>
+        <span>
+          <img
+            class="socialMediaLogo"
+            src="	https://www.yoox.com/media/yoox16/icons/social/normal/Pinterest@svg.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div>
+        <span>
+          <img
+            class="mobileLogo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBc2zCQ4jh9Zh9AeTFJj-JJFTMzY9bcjDpg&usqp=CAU"
+            alt=""
+          />
+        </span>
+        <p><span>DOWNLOAD THE APP FOR iOS / ANDROID</span></p>
+      </div>
+    </div>
+    <div id="mainFooter">
+      <p>
+        POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX
+        NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE #
+        401/I/526
+      </p>
+      <span>LEGAL AREA</span>
+      <span>/</span>
+      <span>PRIVACY POLICY</span>
+    </div>
+
+    <!-- FOOTER Ended -->
+  </body>
+</html>
+<script>
+  let body = document.querySelector("body");
+  body.addEventListener("click", function () {
+    window.location.href = "http://127.0.0.1:5500/design+art.html";
+  });
+</script>

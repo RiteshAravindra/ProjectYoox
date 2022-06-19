@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOOX - Special Selection</title>
+    <style>
+
+        #page{
+            width: 70%;
+            margin: auto;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+      #Heading {
+        text-align: center;
+        
+      }
+      #Heading>h1{
+        color: rgb(51, 51, 51);
+        font-size: 25px;
+        text-decoration: yellow underline;
+        margin-bottom: 20px;
+      };
+      hr {
+        height: 1px;
+        background-color: #a4a8bd;
+
+      }
+      
+      #Heading>p{
+        color: #a4a8bd;
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+
+      }
+
+      #bar {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 15px;
+        margin-bottom: 12px;
+        font-weight: lighter;
+        color: #4a494a;
+      }
+      #bar>span:nth-child(2){
+        margin-left:200px;
+      }
+      #sort{
+        width: 90px;
+        border: none;
+        font-weight: lighter;
+        margin-left: 200px;
+      }
+
+      span > img {
+        width: 15px;
+      }
+      #Mid {
+        display: flex;
+      }
+      #menu { 
+        padding-top: 20px;
+        padding-bottom: 1430px;
+        height: 200px;
+        width: 30%;
+        position: sticky;
+
+      }
+      #menu>div:nth-child(1){
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        padding: 10px;
+        
+      }
+      #menu>div:nth-child(2){
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        padding: 10px
+      }
+      #menu>div:nth-child(3){
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        padding: 10px
+      }
+      #menu>div:nth-child(5){
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        padding: 10px
+      }
+
+      #menu>div:nth-child(4)>p>img{
+        width: 10px;
+        
+      }
+
+      #products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+      }
+      #products>div>img{
+        width: 160px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #a4a8bd;
+        
+        
+      }
+      #products>div>h1{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+      }
+      #products>div>p{
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #4a494a;
+        text-align: center;
+      }
+      #menu{
+        font-size: 15px;
+        color: #4a494a
+      }
+      #menu>div>span{
+        margin-left: 40px;
+        font-size: 18px;
+
+      }
+      /* NAV BAR */
+    
+    #navbar{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: auto;
+        font-size: 13px;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+
+    }
+    #topline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid; */
+        justify-content:space-between;
+        padding: 5px 20px 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    #topline>div:first-child{
+        display: flex;
+        gap: 20px;
+        text-decoration: underline;
+    }
+    #topline>div:last-child{
+        display: flex;
+        gap: 20px;
+    }
+    #topline>div:last-child>a{
+        text-decoration: none;
+        color: black;
+    }
+    #middleline{
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid; */
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+    }
+    #middleline>div:nth-child(2)>img{
+width: 80px;
+margin-right:130px ;
+    }
+    #middleline>div:first-child>a{
+       margin-left: 15px;
+       text-decoration: none;
+       color: black;
+    }
+    #middleline>div:last-child>a{
+        margin-right: 50px;
+    }
+#last{
+    padding: 10px;
+   background-color:#333333;
+}
+#last>div{
+    /* margin-left:60px; */
+    width: fit-content;
+    margin: auto;
+}
+#last>div>a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+/* NAV BAR ENDED */
+
+#upperFooter {
+            width: 100%;
+            height: auto;
+            border: 1px solid transparent;
+
+            background-color: rgb(236, 231, 231);
+            display: flex;
+            justify-content: center;
+        }
+
+        #upperFooter>div {
+            width: 200px;
+            height: 500px;
+            margin-top: 60px;
+            border: 1px solid transparent;
+            padding: 35px;
+            box-sizing: border-box;
+        }
+
+        #upperFooter>div:nth-child(3) {
+            width: 300px;
+            background-color: rgb(255, 247, 247);
+            margin-top: 100px;
+            height: 470px;
+            margin-bottom: 50px;
+        }
+
+        /* #upperFooter>div:nth-child(3)>div {
+            height: 400px;
+            width: 250px;
+            margin: auto;
+            border: 1px solid;
+            box-sizing: border-box;
+        } */
+
+        #upperFooter>div>h4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #upperFooter>div>li {
+            list-style: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #upperFooter>div>li>a {
+            text-decoration: none;
+            color: rgb(64, 62, 62);
+        }
+
+        hr {
+            border: 1px solid;
+            margin: 0 auto;
+            width: 33px;
+        }
+        #footer{
+            width: 100%;
+            height: 60px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(236,231,231);
+        }
+        #footer>div{
+            width: 30%;
+            height: 60px;
+            border: 1px solid transparent;
+            display: flex;
+            
+        }
+        #footer>div:nth-child(2){
+            justify-content: flex-end;
+        }
+        #footer>div>p{
+            margin-top: 23px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .socialMediaLogo{
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .mobileLogo{
+            height: 45px;
+            margin-top: 5px;
+            padding-right: 10px;
+        }
+        #mainFooter{
+            width: 100%;
+            height: 150px;
+            background-color: rgb(65, 61, 61);
+            box-sizing: border-box;
+        }
+        #mainFooter>p{
+            color: #fff;
+            text-align: center; 
+            padding-top: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #mainFooter>span:nth-child(2){
+            color: #fff;
+            padding: 0px;
+            margin-left: 40%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #mainFooter>span:nth-child(3){
+            color: #fff;
+            padding: 0px;
+            margin-left: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #mainFooter>span:nth-child(4){
+            color: #fff;
+            padding: 0px;
+            margin-left: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #yooxNews {
+            height: 400px;
+            width: 250px;
+            margin-left: -10px ;
+            border: 1px solid transparent;
+        }
+        #yooxNews>div{
+            margin-left: 110px;
+            margin-top: 15px;
+            font-size: 30px;
+        }
+        #yooxNews>h3{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(26, 25, 25);
+        }
+        #yooxNews>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(26, 25, 25);
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(26, 25, 25);
+        }
+        #yooxNews>form>input:nth-child(1){
+            height: 50px;
+            width: 90%;
+            margin-top: 25px;
+            margin-left: 10px;
+            border: transparent;
+            background-color: rgb(235, 228, 228);
+        }
+        #yooxNews>form>input:nth-child(2){
+            margin-top: 20px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+        #yooxNews>form>input:nth-child(3){
+            margin-top: 16px;
+            margin-left: 30px;
+        }
+        #yooxNews>form>button{
+            height: 50px;
+            width: 100%;
+            color: white;
+            background-color: rgb(34, 33, 33);
+            border: none;
+            margin-top: 6px;
+        }
+        #yooxNews>form>p{
+            margin-left: 25px;
+            margin-top: -50px;
+            color: gray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 16px;
+        }
+        #yooxNews>form>span>input{
+            margin-top: 50px;
+        }
+   /* FOOTER Ended */
+
+      
+
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- NAV BAR HTML -->
+    <div id="navbar">
+      <div id="topline">
+          <div>
+              <p>INDIA ▼</p>
+          <p>COUSTOMER CARE</p>
+      </div>
+      <div>
+          <!-- <p>FREE STANDARD SHIPPING ON ORDERS OVER $100</p> -->
+      </div>
+      <div>
+          <a href="">🖍REGISTER</a>
+          <a href="">🔓LOG IN</a>
+      </div>
+  </div>
+      <div id="middleline">
+  <div>
+      <a href="">WOMEN</a>
+      <a href="">MEN</a>
+      <a href="">KIDS</a>
+      <a href="">DESIGEN ART</a>
+  </div>
+<div>
+<img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt="">
+</div>    
+<div>
+  <a href="">🔍</a>
+  <a href="">🤍</a>
+  <a href="">👜</a>
+</div> 
+ </div>
+      <div id="last">
+        <div>
+          <!-- <a href="">NEW ARRIVALS</a>
+          <a href="">DESIGNERS</a>
+          <a href="">CLOTHING</a>
+          <a href="">SHOES</a>
+          <a href="">ACCESSORIES & BAGS</a> -->
+          <a href="">DESIGN</a>
+          <a href="">ART</a>
+          <a href="">COLLABORATIONS </a>
+          <!-- <a href="">BEST DEALS</a> -->
+        </div>
+      </div>
+  </div>
+
+    <!-- NAV  Bar Ended -->
+    <div id="page">
+    <div id="Heading">
+      <p>HOME /DESIGN+ART</p>
+      <h1>DESIGN+ART</h1>
+    </div>
+    <div id="bar">
+      <span>SAVE SEARCH</span>
+      <span>83 items</span>
+      <select id="sort">
+        <option value="">SORT BY</option>
+        <option value="latest">LATEST ARRIVALS</option>
+        <option value="high">HIGHEST PRICE</option>
+        <option value="low">LOWEST PRICE</option>
+        <select>
+      
+    </div>
+    <hr>
+    <div id="Mid">
+      <div id="menu">
+        <div>CREATOR +</div>
+        <div>PRICE RANGE <span>+</span></div>
+        <div>BRANDS <span>+</span></div>
+        <div>CATEGORIES <span>-</span>
+            <p><img src="data:image/png;base64,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" alt="">
+            Art</p>
+            <p><img src="data:image/png;base64,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" alt="">
+            Books</p>
+            <p><img src="data:image/png;base64,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" alt="">
+            Home accessories</p>
+        </div>
+        <div>COLORS <span>+</span></div>
+    </div>
+    
+      <div id="products">
+        
+    </div>
+  </div>
+  </div>
+    <!-- FOOTER START -->
+    <div id="upperFooter">
+      <div>
+          <h4>NEW TO YOOX</h4>
+          <br>
+          <hr>
+          <li>
+              <a href="">Shopping guide</a>
+          </li>
+          <li>
+              <a href="">iPhone/iPad/Android</a>
+          </li>
+          <li>
+              <a href="">
+                  <div>Browse all Designers</div>
+              </a>
+          </li>
+          <li>
+              <a href="">Browse all Categories</a>
+          </li>
+      </div>
+      <div>
+          <h4>HELP</h4>
+          <br>
+          <hr>
+          <li>
+              <a href="">Shipping times & costs</a>
+          </li>
+          <li>
+              <a href="">Payments and web security</a>
+          </li>
+          <li>
+              <a href="">Product quality</a>
+          </li>
+          <li>
+              <a href="">Track your order</a>
+          </li>
+          <li>
+              <a href="">Returns & refunds</a>
+          </li>
+          <li>
+              <a href="">FAQs</a>
+          </li>
+          <li>
+              <a href="">Size Guide</a>
+          </li>
+      </div>
+      <div>
+          <div id="yooxNews">
+              <div>✉</div>
+              <h3>YOOX NEWS</h3>
+              <p>Sign up for the newsletter 
+                  <br>ans discover the latest arrivals and promotions</p>
+              <form action="">
+                  <input type="text" placeholder="INSERT YOUR E-MAIL ADDRESS">
+                  <input type="radio"> MAN
+                  <input type="radio"> WOMAN
+                  <br>
+                  <span><input type="checkbox"></span>
+                  <p>I consent to receive YOOX newsletters via email. For further information, please consult the Privacy Policy.</p>
+                  <br>                
+                  <button>SIGN UP</button>
+              </form>
+          </div>
+      </div>
+      <div>
+          <h4>MYOOX</h4>
+          <br>
+          <hr>
+          <li>
+              <a href="">Login</a>
+          </li>
+          <li>
+              <a href="">My Orders</a>
+          </li>
+          <li>
+              <a href="">My Details</a>
+          </li>
+          <li>
+              <a href="">Dream Box</a>
+          </li>
+          <li>
+              <a href="">Première</a>
+          </li>
+      </div>
+      <div>
+          <h4>ABOUT US</h4>
+          <br>
+          <hr>
+          <li>
+              <a href="">C ompany Info</a>
+          </li>
+          <li>
+              <a href="">Press</a>
+          </li>
+          <li>
+              <a href="">Affiliation</a>
+          </li>
+          <li>
+              <a href="">Careers</a>
+          </li>
+      </div>
+  </div>
+  <div id="footer">
+      <div>
+          <p>
+              <span>CONTACT WITH US</span>
+          </p>
+          
+          <span>
+              <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Facebook@svg.svg" alt="">
+          </span>
+          <span>
+              <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Twitter@svg.svg" alt="">
+          </span>
+          
+          <span>
+              <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Youtube@svg.svg" alt="">
+          </span>
+          <span>
+              <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Instagram@svg.svg" alt="">
+          </span>
+          <span>
+              <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Pinterest@svg.svg" alt="">
+          </span>
+      </div>
+      <div>
+          <span>
+              <img class="mobileLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBc2zCQ4jh9Zh9AeTFJj-JJFTMzY9bcjDpg&usqp=CAU" alt="">
+          </span>
+          <p><span>DOWNLOAD THE APP FOR iOS / ANDROID</span></p>
+      </div>
+  </div>
+  <div id="mainFooter">
+      <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
+      <span>LEGAL AREA</span>
+      <span>/</span>
+      <span>PRIVACY POLICY</span>
+  </div>
+  
+  <!-- FOOTER Ended -->
+  </body>
+
+</html>
+  <script>
+    let productData=[
+      {
+        img:"https://www.yoox.com/images/items/58/58054977ag_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "HAY",
+        name: "COLOUR CRATE M Set of 2",
+        productCat: "Container and baskets",
+        price: "US$ 50,00",
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58053928gs_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "HAY",
+        name: "Deco Hand",
+        productCat: "Small objects for Home",
+        price: "US$ 107,00",
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58043445dt_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "SONIC EDITIONS",
+        name: "Billy Idol",
+        productCat: "Photography",
+        price: "US$ 259,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58036857au_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "JONATHAN ADLER",
+        name: "Globo Box",
+        productCat: "Containers and baskets",
+        price: "US$ 418,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58050384uh_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "JENNY HOLZER",
+        name: "Jenny-Holzer",
+        productCat: "Art objects",
+        price: "US$ 75,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58056873cb_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "STEVE MESSAM",
+        name: "Trio Cushions",
+        productCat: "Art objects",
+        price: "US$ 297,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58056876no_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "GUEDALINA CERRUTI",
+        name: "Teddy Butterfly Dog",
+        productCat: "Art objects",
+        price: "US$ 297,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58056875oi_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "GAB BOIS",
+        name: "Jellounge",
+        productCat: "Art objects",
+        price: "US$ 248,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58044593ed_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "LOUISE BOURGEOIS",
+        name: "Bone China Plate",
+        productCat: "Art objects",
+        price: "US$ 63,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/58/58047802oi_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "ANDY WARHOL",
+        name: "White Flowers - limoges porcelian",
+        productCat: "Coffee Service",
+        price: "US$ 169,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/56/56004226ph_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "PATRICK MAURIES",
+        name: "Androgyne",
+        productCat: "Fashion book",
+        price: "US$ 90,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/56/56004230oa_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "POWERHOUSE",
+        name: "Art on DECK: An Exploration of Supreme Skateboards from 1994-2018",
+        productCat: "Contemporary culture book",
+        price: "US$ 116,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/56/56004618cv_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "CHRONICLE BOOKS",
+        name: "Guerrilla Girls: The Art of Behaving Badly",
+        productCat: "Art books",
+        price: "US$ 116,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/56/56004622ia_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "RIZZOLI INTERNATIONAL",
+        name: "Daniel Arsham",
+        productCat: "Art books",
+        price: "US$ 124,00"
+      },
+      {
+        img:"https://www.yoox.com/images/items/56/56004632bu_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        brand: "ABRAMS BOOKS",
+        name: "Thierry Mugler",
+        productCat: "Fashion book",
+        price: "US$ 124,00"
+      },
+    ]
+    let productsCont=document.getElementById("products");
+    let cartLs=JSON.parse(localStorage.getItem("cart"))||[];
+    function displayProducts(data){
+      // productsCont=innerHTML="";
+      data.forEach(function(element){
+      let product=document.createElement("div");
+      product.addEventListener("click",function(element){
+        // if( addCart(element.name)==true){
+        //   alert("Product added successfully")
+        //   cartLs.push(element);
+        //   localStorage.setItem("cart",JSON.stringify(cartLs));
+        // }else{
+        //   alert("Product already exists!");
+        // }
+       
+
+      })
+      let img=document.createElement("img");
+      img.src=element.img;
+      let brand = document.createElement("h1");
+      brand.innerText=element.brand;
+      let name = document.createElement("p");
+      name.innerText=element.name;      
+      let cat = document.createElement("p")
+      cat.innerText=element.productCat;
+      let price = document.createElement("p");
+      price.innerText=element.price;
+      product.append(img,brand,name,cat,price);
+      productsCont.append(product);
+
+      })
+    }
+    displayProducts(productData);
+
+    let filter = document.getElementById("sort");
+    //  sorting  
+    filter.addEventListener("change",function(){
+    if(filter.value ==="latest"){
+      displayProducts(productData);
+    }
+    else if (filter.value==="high"){
+      let res =productData.price.sort(function(a,b){
+        if(a.price>b.price) return -1;
+        if (a.price<b.price) return 1;
+        return 0;
+      })
+      displayProducta(res);
+      
+    }
+      })
+      // function addCart(id){
+      //   for(let i=0;i<cartLs.length;i++){
+      //     if(cartLs[i].name == id) ;
+      //     return false;
+      //   }
+      //   return true;
+      // }
+    
+      let body = document.querySelector("body");
+     body.addEventListener("click", function () {
+    window.location.href = "http://127.0.0.1:5500/cart.html";
+  });    
+  </script>

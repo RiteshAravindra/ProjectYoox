@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,4 +133,140 @@
 
 <script src="viewall.js">
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIEW ALL</title>
+    <style>
+        p{
+            text-align: center;font-weight: lighter;color: gray;font-size: 15px;
+        }
+        #ek{
+            width: 74%;height: 220px;margin: auto;display: grid;
+            grid-template-columns: repeat(2,1fr); grid-template-rows: 190px;
+        }
+        #do{
+            width: 73%;height: 50px;margin: auto;display: flex;
+            justify-content: center;align-items: center;justify-content: space-between;
+            
+        }
+        #do>div:nth-child(1){
+            width: 20%;height: 80%;display: flex;
+            justify-content: center;align-items: center;color: gray;
+        }
+        #do>div:nth-child(2)>p{
+            width: 20%;height: 80%;display: flex;
+            justify-content: center;align-items: center;color: black;font-weight: bolder;
+        }
+        #do>div:nth-child(3){
+            width: 20%;height: 80%;display: flex;
+            justify-content: center;align-items: center;
+        }
+
+        #teen{
+            width: 74%;height: 1000px;margin: auto;margin-top: 20px;display: flex;
+        }
+        #teen1{
+            width: 25%;height: 100%;
+        }
+        #teen1>p{
+            text-align: left;color: black;
+        }
+        #teen1>p:nth-child(1){
+            text-align: left;color: black;font-size: 15px;font-weight: bold;
+        }
+        #teen2{
+            width: 75%;height: 100%;
+        }
+        #teen2>div{
+            width: 100%;height: 50%;margin-bottom: 10px;
+            display: grid; grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100%;margin-bottom: 20px;justify-content: space-between;
+        }
+        #teen2>div>div{
+            margin-bottom: 20px;
+        }
+        #teen2>div>div:hover{
+            background-color: silver;
+        }
+        
+        #teen2>div>div>img{
+            height: 70%;width: 100%;
+        }
+        #teen2>div>div>h2{
+            font-size: 15px;text-align: center;
+        }
+        #teen2>div>div>p{
+            font-size: 15px;text-align: center;color: black;
+        }
+       #teen2>div>div>h3{
+        font-size: 18px;text-align: center;
+       }
+        
+    </style>
+</head>
+<body>
+    <p>HOME / WOMEN / NEW ARRIVALS</p>
+    <div id="ek"></div>
+
+    <div id="do">
+     <div><h3>SAVE SEARCH</h3></div>
+
+     <div><p>100+items</p></div>
+
+     <div><select name="" id="select" onchange="sortarray()">
+     <option value="ALL">SORT BY  ▼</option>
+     <option value="HP">HIGHEST PRICE</option>
+     <option value="LP">LOWEST PRICE</option>
+     </select></div>
+     </div>
+
+     <div id="teen">
+        <div id="teen1">
+            <p>CATEGORIES</p>
+            <p>► Accessories</p>
+            <p>► Activewear</p>
+            <p>► Belts</p>
+            <p>► Coats & Jackets</p>
+            <p>► Dresses</p>
+            <p>► Footwear</p>
+            <p>► Handbags</p>
+            <p>► Jeans and Denim</p>
+            <p>► Jewelry</p>
+            <p>► Jumpsuits and Overalls</p>
+            <p>► Luggage</p>
+            <p>► Pants</p>
+            <p>► Shirts</p>
+            <p>► Skirts</p>
+            <p>► Small Leather Goods</p>
+            <p>► Suits and Blazers</p>
+            <p>► Sweaters and Sweatshirts</p>
+            <p>► Swimwear</p>
+            <p>► Tech gadgets</p>
+            <p>► T-Shirts and Tops</p>
+            <p>► Underwear</p>
+            <p>► Watches</p>
+            <p>► ADIDAS</p>
+            <p>► BALENCIAGA</p>
+            <p>► BALMAIN</p>
+            <p>► ALEXANDER MCQUEEN</p>
+            <p>► BURBERRY</p>
+            <p>► BOTTEGA VENETA</p>
+            <p>► DOLCE & GABBANA</p>
+        </div>
+        <div id="teen2">
+           <div></div> 
+          
+        </div>
+     </div>
+</body>
+</html>
+
+<script src="viewall.js">
+
+>>>>>>> 038300553b0224b8f599378f94a857182e7380d0
 </script>
