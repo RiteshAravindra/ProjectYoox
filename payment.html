@@ -18,9 +18,9 @@
         <div id="topdiv">
         <div>
             <h2>E-MAIL</h2>
-            <a href="">MODIFY</a>
+            <a href="login.html">MODIFY</a>
         </div>
-        <div><p>You are ordering as <p id="user">hemant</p></p></div>
+        <div><p>You are ordering as Coustmer</p></div>
     </div>
         <form>
             <h2>Shipping</h2><br>
@@ -51,29 +51,6 @@
             </div>
         </form>
     </div>
-    <div id="cartdetails">
-        <div>
-            <h2>Your Order</h2>
-            <p>1 item</p>
-        </div>
-        <div>
-            <h5>TOTAL OF YOUR ITEMS</h5>
-            <P>$value</P>
-        </div>
-        <div>
-            <h5>SHIPPING</h5>
-            <p>Standard 6-8 business days</p>
-        </div>
-        <div>
-            <h5>SHIPPING COST</h5>
-            <p>Free</p>
-        </div>
-        <div>
-            <h5>ORDER TOTAL</h5>
-            <p>value</p>
-        </div>
-        <hr>
-    </div>
 </div>
 <div id="qa">
     <h1>Frequently Asked Questions</h1>
@@ -97,10 +74,12 @@
 </body>
 </html>
 <script>
+let name1=JSON.parse(localStorage.getItem('clientDetail'))||[]
 
 let btn=document.querySelector('form').addEventListener('submit',myfunction)
 function myfunction(){
     event.preventDefault()
     window.location.href="paymentgatway.html"
+
 }
 </script>

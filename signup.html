@@ -220,8 +220,8 @@ function myfun(event){
     if(checkEmail(clientData.email) === true){
         clientArr.push(clientData)
       localStorage.setItem("clientDetail",JSON.stringify(clientArr))
-      alert("sigin in succesful")
-      window.location.href = "signup.html"
+      alert("signup succesful")
+      window.location.href = "login.html"
     }
     else{
         alert("account already exists")
