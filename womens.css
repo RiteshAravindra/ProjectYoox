@@ -16,7 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
     height: 20px;
     justify-content:space-between;
     padding: 5px 20px 5px 20px;
@@ -163,7 +162,7 @@ h3{
     font-size: 15px;
 }
 #third>button{
-    position: absolute; background-color:rgba(77,77,77,0.8);bottom: -1500px;border-radius: 100%;
+    position: absolute; background-color:rgba(77,77,77,0.8);bottom: -1300px;border-radius: 100%;
     font-size: 20px;color: white;width: 50px;height: 50px;
 }
 #third>button:nth-child(1){
@@ -214,7 +213,7 @@ width: 100%;margin-top: 30px;
     font-size: 15px;
 }
 #fifth>button{
-    position: absolute; background-color:rgba(77,77,77,0.8);border-radius: 100%;bottom: -2600px;
+    position: absolute; background-color:rgba(77,77,77,0.8);border-radius: 100%;bottom: -2900px;
     font-size: 20px;color: white;width: 50px;height: 50px;
 }
 #fifth>button:nth-child(1){
@@ -226,7 +225,7 @@ width: 100%;margin-top: 30px;
 
 #six{
  width: 230px;height: 400px;margin: auto;background-color: white;
-    position: absolute;right: 240px;bottom: -3600px;
+    position: absolute;right: 180px;bottom: -3800px;
 }
 #six>img{
 width: 80%;margin: auto;
@@ -250,7 +249,7 @@ width: 80%;margin: auto;
 
   #tagline{
      width: 400px;height: 140px;background-color: white;
-    position: absolute;bottom: -3680px;left: 180px;
+    position: absolute;bottom: -3850px;left: 180px;
   }
   #tagline>h1{
     font-size: 27px;text-align: center;margin-left: -22px;
@@ -279,16 +278,18 @@ width: 80%;margin: auto;
 #eight>div>h3{
     font-size: 15px;
 }
-#eight>button{
-    position: absolute; background-color:rgba(77,77,77,0.8);border-radius: 100%;bottom: -4000px;
+/* #eight>button{
+    position: absolute; background-color:rgba(77,77,77,0.8);border-radius: 50%;
     font-size: 20px;color: white;width: 50px;height: 50px;
 }
 #eight>button:nth-child(1){
     left: 50px;
+    bottom: -4500px;
 }
 #eight>button:nth-child(2){
     right: 50px;
-}
+
+} */
 
 #ninth{
  width: 690px;;height: 640px;margin-top: 50px;
@@ -309,7 +310,7 @@ width: 80%;margin: auto;
 }
 
 #tenth{
- width: 690px;;height: 640px;margin-top: 50px;position: absolute;right: 10px;bottom: -5220px;
+ width: 690px;;height: 640px;margin-top: 50px;position: absolute;right: 10px;bottom: -5310px;
 }
 
 #tag3{
@@ -500,4 +501,8 @@ hr {
 }
 #topline>div>p{
 font-size: 13px;
+}
+
+#fontt{
+    font-size: 13px;
 }

@@ -12,7 +12,7 @@ divp1.innerText="Share Your Pride"
 let a = document.createElement('a');
 let link = document.createTextNode("RIGHT THIS WAY >");
         a.appendChild(link);
-     a.href = "google.com"; 
+     a.href = ""; 
 topdiv.append(divh3,divp1,a)
 topdiv1.append(topImage,topdiv)
 document.querySelector('#topbanner').append(topdiv1)
