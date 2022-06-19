@@ -48,6 +48,17 @@
         otp:"1234"
     }]
     document.querySelector('div>button').addEventListener('click',function(){
+        otp.map(function(elem){
+            let value=document.querySelector('#otp').value
+            if(value==elem.otp){
+                alert("ORDER ACCEPTED. Visit Again")
+                // window.location.href="mens.html"
+            }else{
+                alert("Wrong Otp")
+                
+            }
+        })
+       
         
     })
 </script>

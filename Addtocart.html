@@ -150,7 +150,7 @@
     justify-content: space-between;
    }
 
-   #fourteen{
+   .fourteen{
     width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
     align-items: center;justify-content: space-between;
    }
@@ -164,10 +164,10 @@
     width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
     align-items: center;justify-content: space-between;
    }
-   #seventeen{
+   /* #seventeen{
     width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
     align-items: center;justify-content: space-between;
-   }
+   } */
 
    #line{
     border: 1px solid black;width: 90%;height: auto;margin: auto;
@@ -230,7 +230,15 @@
 
     <h1 id="heading"><span>1</span> <span>|</span> <span>ITEMS ADDED TO YOUR SHOPPING BAG</span></h1>
 
-    <div id="four"></div>
+    <div id="four">
+        <select id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
 
     <div id="five">⚪ BUYING A GIFT?</div>
 
@@ -266,9 +274,9 @@
         <div><span style="margin-right: 5px;font-weight: bold;">ENTER YOUR CODE</span> <span style="margin-right: 10px;font-size: 25px;font-weight: bold;">+</span> </div>
     </div>
 
-    <div id="fourteen">
+    <div class="fourteen">
         <h2>TOTAL FOR ITEMS</h2>
-        <h3>$ 3,032.00</h3>
+        <h3>0</h3>
     </div>
 
     <div id="fifteen">
@@ -276,14 +284,14 @@
         <h3>Free</h3>
     </div>
 
-    <div id="sixteen">
+    <!-- <div id="sixteen">
         <h2>PAYMENT</h2>
         <h3>Free</h3>
-    </div>
+    </div> -->
 
-    <div id="seventeen">
+    <div class="fourteen">
         <h2>ORDER TOTAL</h2>
-        <h3>$ 3,032.00</h3>
+        <h3>0</h3>
     </div>
 
     <div id="line"></div>
