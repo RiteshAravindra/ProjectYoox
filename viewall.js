@@ -17,21 +17,21 @@ let viewdata1=[{
     name:"BALMAIN",
     type:"Coats",
     discount:"$ 7,233.00 33% OFF",
-    price: 4821.00 ,   
+    price: 4821.00,   
 },
 {
     Image:"https://www.yoox.com/images/items/54/54184322jj_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
     name:"TOM FORD",
     type:"Jumpsuits/one pieces",
     discount:"$ 6,552.00 39% OFF",
-    price: 3977.00,
+    price:3977.00,
 },
 {
     Image:"https://www.yoox.com/images/items/45/45666440ol_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
     name:"MARNI",
     type:"Handbags",
     discount:"$ 4,717.00 41% OFF",
-    price:2783.00,
+    price: 2783.00,
 },
 {
     Image:"https://www.yoox.com/images/items/50/50282133gp_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
@@ -45,7 +45,7 @@ let viewdata1=[{
     name:"VALENTINO",
     type:"Short dresses",
     discount:"$ 3,901.00 42% OFF",
-    price: 2249.00,
+    price:2249.00,
 },
 {
     Image:"https://www.yoox.com/images/items/12/12806061rk_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
@@ -66,7 +66,7 @@ let viewdata1=[{
     name:"ONLY",
     type:"Short dresses",
     discount:"$ 00.00 0% OFF",
-    price: 35.00,
+    price:35.00,
 },
  
 {
@@ -74,7 +74,7 @@ let viewdata1=[{
     name:"KURSHUNI",
      type:"Jumpsuits/one pieces",
      discount:"$ 3,901.00 42% OFF",
-     price:2229.00,
+     price: 2229.00,
  },
  {
      Image:"https://www.yoox.com/images/items/12/12811664hc_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
@@ -88,13 +88,14 @@ let viewdata1=[{
      name:"PIERRE HARDY",
     type:"Espadrilles",
     discount:"$ 883.0039% OFF",
-     price:532.00,
+     price: 532.00,
  }
 ];
 
 
 displayViewData1(viewdata1);
 function displayViewData1(viewdata1){
+    
 viewdata1.forEach(function(ele) {
     let box=document.createElement("div");
 
@@ -108,7 +109,7 @@ viewdata1.forEach(function(ele) {
 
 displayViewData2(viewdata2);
 function displayViewData2(viewdata2){
-    document.querySelector("#teen2>div").innerHTML="";
+    document.querySelector("#teen2>div").innerHTML=""  
     viewdata2.forEach(function(ele){
        
 let box= document.createElement("div");
@@ -155,8 +156,8 @@ for(let i=0;i<datauser.length;i++){
 }return true;
 }
 
-
 function sortarray(){
+    
     let selected=document.querySelector("#select").value
     if(selected=="ALL"){
         displayViewData2(viewdata2);
@@ -174,5 +175,7 @@ function sortarray(){
         })
         displayViewData2(viewdata2);
         console.log(selected)
-}
-}
+ }
+
+ }
+ console.log( sortarray())

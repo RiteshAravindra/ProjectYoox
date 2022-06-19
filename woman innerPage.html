@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>womensPage</title>
+    <style>      
+        * {
+            margin: 0;
+            padding: 0;
+        }
+                        /* NAVBAR */
+        #main{
+            z-index: 1;
+        }
+        #mainLoginBar {
+            width: 100%;
+            height: 5vh;
+            border: 1px solid rgb(232, 228, 228);
+            background-color: white;
+            position: relative;
+            margin: auto;
+            display: flex;
+        }
+
+        #mainLoginBar>div {
+            margin-left: 20vw;
+            width: 70vw;
+            height: 30px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+        }
+
+        #mainLoginBar>div>div:nth-child(1) {
+            width: 25%;
+            height: 30px;
+            display: inline-block;
+            border: 1px solid transparent;
+            display: flex;
+        }
+
+        #mainLoginBar>div>div:nth-child(2) {
+            width: 42%;
+            height: 30px;
+            border: 1px solid transparent;
+        }
+
+        #mainLoginBar>div>div:nth-child(2)>p {
+            font-family: Montserrat, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 8px;
+            color: rgb(22, 20, 20);
+            font-weight: bold;
+            padding: 1%;
+        }
+
+        #mainLoginBar>div>div:nth-child(3) {
+            width: 25%;
+            height: 30px;
+            border: 1px solid transparent;
+            display: flex;
+        }
+
+        #states>p {
+            font-size: 10px;
+            margin-left: 14px;
+            text-decoration: underline;
+            font-weight: bold;
+            padding-top: 3%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #login>p:first-child {
+            font-size: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+            font-weight: bold;
+            padding-top: 3%;
+        }
+
+        #login>p:last-child {
+            font-size: 10px;
+            text-decoration: underline;
+            margin-left: 6px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 3%;
+        }
+
+        #mainLogoBar {
+            height: 90px;
+            width: 100%;
+            /* width: 100vw; */
+            border: 0px solid;
+            background-color: white;
+        }
+
+        #mainLogoBar>div:first-child {
+            height: 60px;
+            width: 100%;
+            border: 1px solid transparent;
+            /* margin-left: 40px; */
+            gap: 15px;
+            justify-content: center;
+        }
+
+        #mainLogoBar>div:last-child {
+            height: 30px;
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(41, 40, 40);
+        }
+
+        #mainLogoBar>div:last-child>P {
+            margin-top: 7PX;
+            color: white;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        #logo {
+            border: 1px solid transparent;
+            font-size: 12px;
+            display: flex;
+        }
+        #logo>span{
+            font-weight: bold;
+        }
+        #logo>span:nth-child(1) {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #logo>span:nth-child(2),#logo>span:nth-child(3),#logo>span:nth-child(4),#logo>span:nth-child(5) {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        #logo>img:nth-child(6){
+            margin-left: 160px;
+            font-size: 30px;
+            font-weight: 100;
+            color: transparent;
+            height: 80%;
+            margin-top: 5px;
+        }
+        #logo>span:nth-child(7){
+            margin-left: 160px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #logo>span:nth-child(8){
+            margin-left: 60px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #logo>span:nth-child(9){
+            margin-left: 60px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #main{
+            position: sticky;
+            top: 0px;
+        }
+                    /* AFTER NAVBAR */
+        #afterNavbar{
+            width: fit-content;
+            height: 700px;
+            border: 1px solid transparent;
+            display: flex;
+        }
+        #afterNavbar>div:nth-child(1){
+            width: 26%;
+            height: 500px;
+            border: 1px solid transparent;
+            margin-top: 6%;
+            margin-left: 24vw;
+        }
+        #afterNavbar>div:nth-child(1)>img{
+            width: 100%;
+            margin-top: -10%;
+        }
+        #afterNavbar>div:nth-child(1)>button:nth-child(3){
+            position: absolute;
+            top: 54%;
+            background-color: transparent;
+            border: transparent;
+            cursor: pointer;
+            right: 51%;
+        }
+        #afterNavbar>div:nth-child(1)>button:nth-child(2){
+            position: absolute;
+            top: 54%;
+            left: 23%;
+            background-color: transparent;
+            border: transparent;
+            cursor: pointer;
+        }
+        #afterNavbar>div:nth-child(2){
+            width: 420px;
+            height: 500px;
+            border: 1px solid transparent;
+            margin-top: 100px;
+            margin-left: 220px;
+        }
+        #afterNavbar>div>button>p{
+            font-size: 25px;
+        }
+
+                    /* forImages */
+        #forImages{
+            width: 20%;
+            height: auto;
+            border: 1px solid transparent;
+            margin-left:25% ;
+            display: flex;
+            gap: 1.5%;
+            margin-top: -155px;
+        }
+        #forImages>div{
+            margin: auto;
+            height: auto;
+            width: 20%;
+            border: 1px solid transparent;
+            
+        }
+        #forImages>div>img{
+            width: 100%;
+        }
+        #forImages>div>img:hover{
+            border: 1px solid;
+            cursor: pointer;
+        }
+                /* right div of image */
+        #afterNavbar>div>h3{
+            color: rgb(45, 43, 43);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #afterNavbar>div>h3+p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 12px;
+        }
+        #afterNavbar>div>p+p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            font-weight: bold;
+            color:rgb(69, 66, 66);
+        }
+        #afterNavbar>div>input{
+            background-color: aqua;
+            size: 100px;
+            margin-top: 35px;
+            margin-left: 20px;
+        }
+        #afterNavbar>div>p{
+            margin-top: 20px;
+        }
+        #afterNavbar>div>p>span{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        #afterNavbar>div>p>span:hover{
+            border: 1px solid;
+            cursor: pointer;
+        }
+       #addToShop{
+        margin-top: 30px;
+        font-size: 14px;
+        background-color: rgb(33, 34, 34);
+        width: 97%;
+        height: 50px;
+        border: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(226, 235, 244);
+        font-weight: bold;
+        cursor: pointer;
+       }
+       #addToDream{
+        margin-top: 10px;
+        font-size: 13px;
+        width: 97%;
+        height: 50px;
+        border: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(33, 34, 34);
+        font-weight: bold;
+        cursor: pointer;
+       }
+       #afterDreamBox{
+        width: 97%;
+        margin-top: 10px;
+        border: 1px solid transparent;
+        height: 30px;
+        background-color: rgb(255,254,148);
+       }
+       #afterDreamBox>p{
+        text-align: center;
+        margin-top: 2%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+       }
+       #categories{
+        margin-left: 420px;
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: gray;
+        margin-top: -15px;
+        cursor: pointer;
+       }
+       #categories>span{
+        margin-left: 10px;
+       }
+       #noFooter{
+        width: 60%;
+        margin-left: 22%;
+        margin-top: 10px;
+        justify-content: center;
+        color: gray;
+       }
+       #productDetails{
+        width: 58%;
+        margin-left: 22%;
+        border: 1px solid transparent;
+        height: 200px;
+       }
+       #productDetails>p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 10px;
+       }
+       .twoHeading{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 20px;
+        color: rgb(50, 48, 48);
+       }
+       #det{
+        margin-left: 550px;
+        margin-top: -120px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(50, 48, 48);
+       }
+       .para{
+        margin-left: 550px;
+       }
+                /* footer */
+                *{
+            padding: 0;
+            margin: 0;
+        }
+         #upperFooter {
+            width: 100%;
+            height: 550px;
+            border: 1px solid transparent;
+            background-color: rgb(236, 231, 231);
+            display: flex;
+            justify-content: center;
+        }
+
+        #upperFooter>div {
+            width: 200px;
+            height: 500px;
+            margin-top: -10px;
+            border: 1px solid transparent;
+            padding: 35px;
+            box-sizing: border-box;
+        }
+
+        #upperFooter>div:nth-child(3) {
+            width: 300px;
+            background-color: rgb(255, 247, 247);
+            margin-top: 40px;
+            height: 470px;
+        }
+
+        /* #upperFooter>div:nth-child(3)>div {
+            height: 400px;
+            width: 250px;
+            margin: auto;
+            border: 1px solid;
+            box-sizing: border-box;
+        } */
+
+        #upperFooter>div>h4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #upperFooter>div>li {
+            list-style: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #upperFooter>div>li>a {
+            text-decoration: none;
+            color: rgb(64, 62, 62);
+        }
+
+        hr {
+            border: 1px solid;
+            margin: 0 auto;
+            width: 33px;
+        }
+        #footer{
+            width: 100%;
+            height: 60px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(236,231,231);
+        }
+        #footer>div{
+            width: 30%;
+            height: 60px;
+            border: 1px solid transparent;
+            display: flex;
+            
+        }
+        #footer>div:nth-child(2){
+            justify-content: flex-end;
+        }
+        #footer>div>p{
+            margin-top: 23px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .socialMediaLogo{
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .mobileLogo{
+            height: 45px;
+            margin-top: 5px;
+            padding-right: 10px;
+        }
+        #mainFooter{
+            width: 100%;
+            height: 150px;
+            background-color: rgb(65, 61, 61);
+            box-sizing: border-box;
+        }
+        #mainFooter>p{
+            color: #fff;
+            text-align: center; 
+            padding-top: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #mainFooter>span:nth-child(2){
+            color: #fff;
+            padding: 0px;
+            margin-left: 40%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #mainFooter>span:nth-child(3){
+            color: #fff;
+            padding: 0px;
+            margin-left: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #mainFooter>span:nth-child(4){
+            color: #fff;
+            padding: 0px;
+            margin-left: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+        }
+        #yooxNews {
+            height: 400px;
+            width: 250px;
+            margin-left: -10px ;
+            border: 1px solid transparent;
+        }
+        #yooxNews>div{
+            margin-left: 110px;
+            margin-top: px;
+            font-size: 30px;
+        }
+        #yooxNews>h3{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(26, 25, 25);
+        }
+        #yooxNews>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(26, 25, 25);
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(26, 25, 25);
+        }
+        #yooxNews>form>input:nth-child(1){
+            height: 50px;
+            width: 90%;
+            margin-top: 25px;
+            margin-left: 10px;
+            border: transparent;
+            background-color: rgb(235, 228, 228);
+        }
+        #yooxNews>form>input:nth-child(2){
+            margin-top: 20px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+        #yooxNews>form>input:nth-child(3){
+            margin-top: 16px;
+            margin-left: 30px;
+        }
+        #yooxNews>form>button{
+            height: 50px;
+            width: 100%;
+            color: white;
+            background-color: rgb(34, 33, 33);
+            border: none;
+            margin-top: 6px;
+        }
+        #yooxNews>form>p{
+            margin-left: 25px;
+            margin-top: -50px;
+            color: gray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 16px;
+        }
+        #yooxNews>form>span>input{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+                    <!-- NAVBAR -->
+    <nav id="main">
+        <div id="mainLoginBar">
+            <div>
+                <div id="states">
+                    <p>UNITED STATES ▼</p>
+                    <p>CUSTOMER CARE</p>
+                </div>
+                <div>
+                    <p>FREE STANDARD SHIPPING ON ORDERS OVER $100</p>
+                </div>
+                <div id="login">
+                    <p>🖍REGISTER</p>
+                    <p>🔓LOGIN</p>
+                </div>
+            </div>
+        </div>
+        <div id="mainLogoBar">
+            <div id="logo">
+                <span>WOMEN</span>
+                <span>MEN</span>
+                <span>KIDS</span>
+                <span>/</span>
+                <span>DESIGN+ART</span>
+                <img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt="">
+                <span>🔍</span>
+                <span>🤍</span>
+                <span>👜</span>
+            </div>
+            <div>
+                <p>NEW ARRIVALS</p>
+                <p>DESIGNERS</p>
+                <p>CLOTHING</p>
+                <P>SHOES</P>
+                <P>ACCESSORIES & BAGS</P>
+                <P>8 BY YOOX</P>
+                <P>YOOXYGEN</P>
+                <P>COLLABORATIONS</P>
+                <P>BEST DEALS</P>
+            </div>
+        </div>
+    </nav>
+                 <!-- /* AFTER NAVBAR */ -->
+    <div id="afterNavbar">
+        <div>
+            <img id="showImage" src="https://www.yoox.com/images/items/12/12793777DM_14_f.jpg?impolicy=crop&width=387&height=490" alt="">
+            <button id="left"><p><</p></button>
+            <button id="right"><p>></p></button>
+        </div>
+        <div>
+            <h3>SEE BY CHLOÉ</h3>
+            <p>T-shirts</p>
+            <p>US$ 375.00</p>
+            <br>
+            <p>
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+            </p>
+            <br>
+            <button id="addToShop">ADD TO SHOPPING BAG</button>
+            <br>
+            <button id="addToDream">ADD TO DREAM BOX</button>
+            <div id="afterDreamBox">
+                <p>This item is excluded from all promotional offers.</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="forImages" >
+        <div>
+            <img id="image1" src="https://www.yoox.com/images/items/12/12793777DM_14_f.jpg?impolicy=crop&width=387&height=490" alt="">
+        </div>
+        <div>
+            <img id="image2" src="https://www.yoox.com/images/items/12/12793777DM_14_r.jpg?impolicy=crop&width=387&height=490" alt="">
+        </div>
+        <div>
+            <img id="image3" src="https://www.yoox.com/images/items/12/12793777DM_14_d.jpg?impolicy=crop&width=387&height=490" alt="">
+        </div>
+        <div>
+            <img id="image4" src="https://www.yoox.com/images/items/12/12793777DM_14_a.jpg?impolicy=crop&width=387&height=490" alt="">
+        </div>
+    </div>
+    <br>
+    <p id="categories">
+        <span>HOME</span>
+        <span>▶</span>
+        <span>Women</span>
+        <span>▶</span>
+        <span>T-Shirts and Tops</span>
+        <span>▶</span>
+        <span>T-shirts</span>
+        <span>▶</span>
+        <span>SEE BY CHLOÉ</span>
+    </p>
+    <hr id="noFooter">
+    <div id="productDetails">
+        <h3 class="twoHeading">COMPOSITION</h3>
+        <p>100% Cotton</p>
+        <h3 class="twoHeading">MEASUREMENTS</h3>
+        <p>Length 21.84 inches</p>
+        <h3 id="det">DETAILS</h3>
+        <p class="para">lace, jersey, ruffles, solid colour with appliqués, round collar, short sleeves, cap sleeves</p>
+        <p class="para">Product code: 12793777DM</p>
+    </div>
+                <!-- FOOTER -->
+    <div id="upperFooter">
+        <div>
+            <h4>NEW TO YOOX</h4>
+            <br>
+            <hr>
+            <li>
+                <a href="">Shopping guide</a>
+            </li>
+            <li>
+                <a href="">iPhone/iPad/Android</a>
+            </li>
+            <li>
+                <a href="">
+                    <div>Browse all Designers</div>
+                </a>
+            </li>
+            <li>
+                <a href="">Browse all Categories</a>
+            </li>
+        </div>
+        <div>
+            <h4>HELP</h4>
+            <br>
+            <hr>
+            <li>
+                <a href="">Shipping times & costs</a>
+            </li>
+            <li>
+                <a href="">Payments and web security</a>
+            </li>
+            <li>
+                <a href="">Product quality</a>
+            </li>
+            <li>
+                <a href="">Track your order</a>
+            </li>
+            <li>
+                <a href="">Returns & refunds</a>
+            </li>
+            <li>
+                <a href="">FAQs</a>
+            </li>
+            <li>
+                <a href="">Size Guide</a>
+            </li>
+        </div>
+        <div>
+            <div id="yooxNews">
+                <div>✉</div>
+                <h3>YOOX NEWS</h3>
+                <p>Sign up for the newsletter 
+                    <br>ans discover the latest arrivals and promotions</p>
+                <form action="">
+                    <input type="text" placeholder="INSERT YOUR E-MAIL ADDRESS">
+                    <input type="radio"> MAN
+                    <input type="radio"> WOMAN
+                    <br>
+                    <span><input type="checkbox"></span>
+                    <p>I consent to receive YOOX newsletters via email. For further information, please consult the Privacy Policy.</p>
+                    <br>                
+                    <button>SIGN UP</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>MYOOX</h4>
+            <br>
+            <hr>
+            <li>
+                <a href="">Login</a>
+            </li>
+            <li>
+                <a href="">My Orders</a>
+            </li>
+            <li>
+                <a href="">My Details</a>
+            </li>
+            <li>
+                <a href="">Dream Box</a>
+            </li>
+            <li>
+                <a href="">Première</a>
+            </li>
+        </div>
+        <div>
+            <h4>ABOUT US</h4>
+            <br>
+            <hr>
+            <li>
+                <a href="">C ompany Info</a>
+            </li>
+            <li>
+                <a href="">Press</a>
+            </li>
+            <li>
+                <a href="">Affiliation</a>
+            </li>
+            <li>
+                <a href="">Careers</a>
+            </li>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>
+                <span>CONTACT WITH US</span>
+            </p>
+            
+            <span>
+                <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Facebook@svg.svg" alt="">
+            </span>
+            <span>
+                <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Twitter@svg.svg" alt="">
+            </span>
+            
+            <span>
+                <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Youtube@svg.svg" alt="">
+            </span>
+            <span>
+                <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Instagram@svg.svg" alt="">
+            </span>
+            <span>
+                <img class="socialMediaLogo" src="	https://www.yoox.com/media/yoox16/icons/social/normal/Pinterest@svg.svg" alt="">
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="mobileLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBc2zCQ4jh9Zh9AeTFJj-JJFTMzY9bcjDpg&usqp=CAU" alt="">
+            </span>
+            <p><span>DOWNLOAD THE APP FOR iOS / ANDROID</span></p>
+        </div>
+    </div>
+    <div id="mainFooter">
+        <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
+        <span>LEGAL AREA</span>
+        <span>/</span>
+        <span>PRIVACY POLICY</span>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    let imgArr = [
+    "https://www.yoox.com/images/items/12/12793777DM_14_f.jpg?impolicy=crop&width=387&height=490",
+    "https://www.yoox.com/images/items/12/12793777DM_14_r.jpg?impolicy=crop&width=387&height=490",
+    "https://www.yoox.com/images/items/12/12793777DM_14_d.jpg?impolicy=crop&width=387&height=490",
+    "https://www.yoox.com/images/items/12/12793777DM_14_a.jpg?impolicy=crop&width=387&height=490"
+    ];
+    let imgNum = 0;
+    let img = document.querySelector("#showImage");
+    let button1 = document.querySelector("#left");
+    let button2 = document.querySelector("#right");
+    button1.addEventListener("click",function(){
+        if(imgNum == 0){
+            imgNum = imgArr.length-1;
+        }else{
+            imgNum--;
+        }
+        img.src = imgArr[imgNum];
+    })
+    button2.addEventListener("click",function(){
+        if(imgNum == imgArr.length-1){
+            imgNum = 0;
+        }else{
+            imgNum++;
+        }
+        img.src = imgArr[imgNum];
+    })
+    let img1 = document.querySelector("#image1").addEventListener("click",function(){
+        img.src = imgArr[0];
+    })
+    let img2 = document.querySelector("#image2").addEventListener("click",function(){
+        img.src = imgArr[1];
+    })
+    let img3 = document.querySelector("#image3").addEventListener("click",function(){
+        img.src = imgArr[2];
+    })
+    let img4 = document.querySelector("#image4").addEventListener("click",function(){
+        img.src = imgArr[3];
+    })
+</script>

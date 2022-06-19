@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>womensPage</title>
+    <style>
+                        /* NAVBAR */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mainLoginBar {
+            width: 100vw;
+            height: 5vh;
+            border: 1px solid rgb(232, 228, 228);
+            background-color: white;
+            position: relative;
+            margin: auto;
+        }
+
+        #mainLoginBar>div {
+            margin-left: 20vw;
+            width: 70vw;
+            height: 30px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+        }
+
+        #mainLoginBar>div>div:nth-child(1) {
+            width: 25%;
+            height: 30px;
+            display: inline-block;
+            border: 1px solid transparent;
+        }
+
+        #mainLoginBar>div>div:nth-child(2) {
+            width: 42%;
+            height: 30px;
+            border: 1px solid transparent;
+        }
+
+        #mainLoginBar>div>div:nth-child(2)>p {
+            font-family: Montserrat, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 8px;
+            color: rgb(22, 20, 20);
+            font-weight: bold;
+        }
+
+        #mainLoginBar>div>div:nth-child(3) {
+            width: 25%;
+            height: 30px;
+            border: 1px solid transparent;
+        }
+
+        #states>span {
+            font-size: 10px;
+            margin-left: 14px;
+            text-decoration: underline;
+            font-weight: bold;
+            padding-top: 30%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #login>span:first-child {
+            font-size: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        #login>span:last-child {
+            font-size: 10px;
+            text-decoration: underline;
+            margin-left: 6px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #mainLogoBar {
+            height: 90px;
+            width: 100%;
+            /* width: 100vw; */
+            border: 0px solid;
+            background-color: white;
+        }
+
+        #mainLogoBar>div:first-child {
+            height: 60px;
+            width: 100%;
+            border: 1px solid transparent;
+            /* margin-left: 40px; */
+            gap: 15px;
+            justify-content: center;
+        }
+
+        #mainLogoBar>div:last-child {
+            height: 30px;
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(41, 40, 40);
+        }
+
+        #mainLogoBar>div:last-child>P {
+            margin-top: 7PX;
+            color: white;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        #logo {
+            border: 1px solid transparent;
+            font-size: 12px;
+            display: flex;
+        }
+        #logo>span{
+            font-weight: bold;
+        }
+        #logo>span:nth-child(1) {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #logo>span:nth-child(2),#logo>span:nth-child(3),#logo>span:nth-child(4),#logo>span:nth-child(5) {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        #logo>img:nth-child(6){
+            margin-left: 160px;
+            font-size: 30px;
+            font-weight: 100;
+            color: transparent;
+            height: 80%;
+            margin-top: 5px;
+        }
+        #logo>span:nth-child(7){
+            margin-left: 160px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #logo>span:nth-child(8){
+            margin-left: 60px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #logo>span:nth-child(9){
+            margin-left: 60px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #main{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav id="main">
+        <div id="mainLoginBar">
+            <div>
+                <div id="states">
+                    <span>UNITED STATES ▼</span>
+                    <span>CUSTOMER CARE</span>
+                </div>
+                <div>
+                    <p>FREE STANDARD SHIPPING ON ORDERS OVER $100</p>
+                </div>
+                <div id="login">
+                    <span>🖍REGISTER</span>
+                    <span>🔓LOGIN</span>
+                </div>
+            </div>
+        </div>
+        <div id="mainLogoBar">
+            <div id="logo">
+                <span>WOMEN</span>
+                <span>MEN</span>
+                <span>KIDS</span>
+                <span>/</span>
+                <span>DESIGN+ART</span>
+                <img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt="">
+                <span>🔍</span>
+                <span>🤍</span>
+                <span>👜</span>
+            </div>
+            <div>
+                <p>NEW ARRIVALS</p>
+                <p>DESIGNERS</p>
+                <p>CLOTHING</p>
+                <P>SHOES</P>
+                <P>ACCESSORIES & BAGS</P>
+                <P>8 BY YOOX</P>
+                <P>YOOXYGEN</P>
+                <P>COLLABORATIONS</P>
+                <P>BEST DEALS</P>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
