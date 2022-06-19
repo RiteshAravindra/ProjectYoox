@@ -1,169 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Landing Page</title>
+    <title>Document</title>
     <style>
-        * {
-            margin: 0;
+        *{
             padding: 0;
+            margin: 0;
         }
-
-        #mainLoginBar {
+         #upperFooter {
             width: 100%;
             height: auto;
-            border: 1px solid rgb(232, 228, 228);
-            background-color: white;
-            position: sticky;
-            top: 0px;
-            margin: auto;
-        }
-
-        #mainLoginBar>div {
-            margin-left: 20vw;
-            width: 70vw;
-            height: 30px;
-            border: 1px solid transparent;
-            display: flex;
-            justify-content: center;
-        }
-
-        #mainLoginBar>div>div:nth-child(1) {
-            width: 25%;
-            height: auto;
-            display: inline-block;
-            border: 1px solid transparent;
-            display: flex;
-        }
-
-        #mainLoginBar>div>div:nth-child(2) {
-            width: 42%;
-            height: auto;
-            border: 1px solid transparent;
-        }
-
-        #mainLoginBar>div>div:nth-child(2)>p {
-            font-family: Montserrat, sans-serif;
-            font-size: 10px;
-            text-align: center;
-            margin-top: 8px;
-            color: rgb(22, 20, 20);
-            font-weight: bold;
-        }
-
-        #mainLoginBar>div>div:nth-child(3) {
-            width: 25%;
-            height: 30px;
-            border: 1px solid transparent;
-            display: flex;
-        }
-        #states>p {
-            font-size: 10px;
-            margin-left: 14px;
-            text-decoration: underline;
-            font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding: 2.5%;
-        }
-
-        #login>p:first-child {
-            font-size: 10px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-decoration: underline;
-            font-weight: bold;
-            padding: 2.5%;
-        }
-
-        #login>p:last-child {
-            font-size: 10px;
-            text-decoration: underline;
-            margin-left: 6px;
-            font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding: 2.5%;
-        }
-
-        #logo {
-            text-align: center;
-            margin-top: 35px;
-        }
-
-        #logo>span {
-            background-image: url(https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg);
-            color: transparent;
-            font-size: 50px;
-        }
-
-        #afterLogo {
-            text-align: center;
-            margin-top: 5px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        #allSection {
-            /* height: 650px; */
-            width: 100%;
-            border: 1px solid transparent;
-            display: flex;
-            margin-top: 60px;
-            justify-content: center;
-            gap: 10px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        #allSection>div {
-            /* height: 650px; */
-            width: 18%;
             border: 1px solid transparent;
 
-        }
-
-        #allSection>div>img {
-            height: 60%;
-            width: 100%;
-        }
-
-        #allSection>div>img+div {
-            width: 100%;
-            background-color: rgb(53, 50, 50);
-            color: white;
-            height: auto;
-            padding: 40px;
-            box-sizing: border-box;
-            text-align: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 12px;
-        }
-
-        #allSection>div>div+div {
-            width: 100%;
-            background-color: rgb(236, 231, 231);
-            height: auto;
-            padding: 30px;
-            box-sizing: border-box;
-            text-align: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 12px;
-        }
-
-        #upperFooter {
-            width: 100%;
-            height: 700px;
-            border: 1px solid transparent;
-            margin-top: 0px;
             background-color: rgb(236, 231, 231);
             display: flex;
             justify-content: center;
-            margin-top: -205px;
         }
 
         #upperFooter>div {
             width: 200px;
             height: 500px;
-            margin-top: 125px;
+            margin-top: 60px;
             border: 1px solid transparent;
             padding: 35px;
             box-sizing: border-box;
@@ -172,8 +32,9 @@
         #upperFooter>div:nth-child(3) {
             width: 300px;
             background-color: rgb(255, 247, 247);
-            margin-top: 160px;
+            margin-top: 100px;
             height: 470px;
+            margin-bottom: 50px;
         }
 
         /* #upperFooter>div:nth-child(3)>div {
@@ -329,55 +190,9 @@
         #yooxNews>form>span>input{
             margin-top: 50px;
         }
-        a{
-            text-decoration: none;
-            color: white;
-        }
     </style>
 </head>
-
 <body>
-    <div id="mainLoginBar">
-        <div>
-            <div id="states">
-                <p>INDIA ▼</p>
-                <p>CUSTOMER CARE</p>
-            </div>
-            <div>
-                <!-- <p>FREE STANDARD SHIPPING ON ORDERS OVER $100</p> -->
-            </div>
-            <div id="login">
-                <p>🖍REGISTER</p>
-                <p>🔓LOGIN</p>
-            </div>
-        </div>
-    </div>
-    <h1 id="logo">
-        <span>YOO</span>
-    </h1>
-    <div id="afterLogo">SHOP FASHION / DESIGN+ART</div>
-    <div id="allSection">
-        <div>
-            <img src="https://www.yoox.com/images/yoox80/banners/5569_23_splash_W.jpg?634485886601286852" alt="">
-            <div><a href="https://www.yoox.com/us/women">WOMEN</a></div>
-            <div>[VIEW MORE]</div>
-        </div>
-        <div>
-            <img src="https://www.yoox.com/images/yoox80/banners/5569_22_splash_M.jpg?634485886601286852" alt="">
-            <div><a href="">MEN</a></div>
-            <div>[VIEW MORE]</div>
-        </div>
-        <div>
-            <img src="https://www.yoox.com/images/yoox80/banners/5569_17_splash_K.jpg?634485886601286852" alt="">
-            <div><a href="">KIDS</a></div>
-            <div>[VIEW MORE]</div>
-        </div>
-        <div>
-            <img src="https://www.yoox.com/images/yoox80/banners/5569_15_splash_D.jpg?634485886601286852" alt="">
-            <div><a href="">DESIGN+ART</a></div>
-            <div>[VIEW MORE]</div>
-        </div>
-    </div>
     <div id="upperFooter">
         <div>
             <h4>NEW TO YOOX</h4>
@@ -517,5 +332,4 @@
         <span>PRIVACY POLICY</span>
     </div>
 </body>
-
 </html>
