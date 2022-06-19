@@ -43,7 +43,7 @@
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
 }
-#middleline>div:nth-child(2)>img{
+#middleline>div:nth-child(2)>a>img{
 width: 80px;
 margin-right:130px ;
 }

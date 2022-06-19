@@ -93,10 +93,122 @@
       .sec1-p2p1:hover{
             cursor: pointer;
       }
+      /* header */
+#navbar{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+    font-size: 13px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#topline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    justify-content:space-between;
+    padding: 5px 20px 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#topline>div:first-child{
+    display: flex;
+    gap: 20px;
+    text-decoration: underline;
+}
+#topline>div:last-child{
+    display: flex;
+    gap: 20px;
+}
+#topline>div:last-child>a{
+    text-decoration: none;
+    color: black;
+}
+#middleline{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+#middleline>div:nth-child(2)>a>img{
+width: 80px;
+margin-right:130px ;
+}
+#middleline>div:first-child>a{
+   margin-left: 15px;
+   text-decoration: none;
+   color: black;
+}
+#middleline>div:last-child>a{
+    margin-right: 50px;
+}
+#last{
+padding: 10px;
+background-color:#333333;
+}
+#last>div{
+/* margin-left:60px; */
+width: fit-content;
+margin: auto;
+}
+#last>div>a{
+margin-right: 10px;
+text-decoration: none;
+color: white;
+}
+/* header end */
     </style>
 </head>
 
 <body>
+    <div id="navbar">
+        <div id="topline">
+            <div>
+                <p>INDIA ▼</p>
+            <p>COUSTOMER CARE</p>
+        </div>
+        <div>
+            <p>FREE STANDARD SHIPPING ON ORDERS OVER $100</p>
+        </div>
+        <div>
+            <a href="/ProjectYoox/signup.html">🖍REGISTER</a>
+            <a href="/ProjectYoox/login.html">🔓LOG IN</a>
+        </div>
+    </div>
+        <div id="middleline">
+    <div>
+        <a href="/ProjectYoox/womens.html">WOMEN</a>
+        <a href="/ProjectYoox/menspage/mens.html">MEN</a>
+        <a href="/ProjectYoox/Kids.html">KIDS</a>
+        <a href="/ProjectYoox/design_art.html">DESIGEN ART</a>
+    </div>
+<div>
+    <a href="/ProjectYoox/realLandingPage.html"><img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a>
+</div>    
+<div>
+    <a href="">🔍</a>
+    <a href="/ProjectYoox/Addtocart.html">🤍</a>
+    <a href="/ProjectYoox/Addtocart.html">👜</a>
+</div> 
+   </div>
+        <div id="last">
+          <div>
+            <a href="/ProjectYoox/girlsva.html">NEW ARRIVALS</a>
+            <a href="/ProjectYoox/girlsva.html">DESIGNERS</a>
+            <a href="/ProjectYoox/girlsva.html">CLOTHING</a>
+            <a href="/ProjectYoox/girlsva.html">SHOES</a>
+            <a href="/ProjectYoox/girlsva.html">ACCESSORIES & BAGS</a>
+            <a href="/ProjectYoox/girlsva.html">8 BY YOOX</a>
+            <a href="/ProjectYoox/girlsva.html">YOOXYGEN</a>
+            <a href="/ProjectYoox/girlsva.html">COLLABORATIONS </a>
+            <a href="/ProjectYoox/girlsva.html">BEST DEALS</a>
+          </div>
+        </div>
+    </div>
     <div id="container">
         <div class="sec1">
             HOME/GIRL/NEW ARRIVALS
