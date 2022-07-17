@@ -109,7 +109,7 @@
 </body>
 <script>
    document.querySelector("form").addEventListener("submit",myfun)
-   clientArr = JSON.parse(localStorage.getItem("clientDetail")) || []
+   Arr = JSON.parse(localStorage.getItem("clientDetail")) || []
 function myfun(event){
     event.preventDefault()
      let clientData = {
@@ -126,7 +126,7 @@ function myfun(event){
      }
 }   
 function checkSignin(email,password){
-    let filtered = clientArr.filter(function(element){
+    let filtered = Arr.filter(function(element){
         return element.email === email && element.password === password
     })
     if(filtered.length>0){
