@@ -293,8 +293,8 @@ function displaydata1(data1){
  
       
 
-        let pic=document.createElement("img");
-        pic.setAttribute("src" , ele.imageurl);
+        let picture=document.createElement("img");
+        picture.setAttribute("src" , ele.imageurl);
   
         let name=document.createElement("h2");
         name.innerText=ele.name;
@@ -310,7 +310,7 @@ function displaydata1(data1){
         price.innerText=ele.price;
         document.querySelectorAll("button")
         
-        box.append(pic,name,dress,disc,price);
+        box.append(picture,name,dress,disc,price);
         document.querySelector("#eight").append(box)  
     })
    }
