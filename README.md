@@ -1,7 +1,7 @@
 # ProjectYoox.com-Clone
 A web Application to shop a wide array of fashion products by the best Italian and international designers.Yoox_Clone did this by using HTML, CSS, Javascript and RestApi. I tried to clone it exactly like real Yoox website.
 
-This was a group project executed within a % days of span.
+This was a group project executed within 5 days of span.
 
 
 Have a look ⬇️
