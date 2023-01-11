@@ -16,11 +16,11 @@ Have a look ⬇️
 <br>
 
 ##Contributors:
-## @Ritesh Aravindra
+## @Ritesh
 ## @Somya
 ## @Gaurav
 ## @Hamant
 ## @Kausik
-
+## @Shivom
 
 ## THANK YOU ❤️
