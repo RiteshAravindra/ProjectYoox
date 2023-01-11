@@ -15,51 +15,12 @@ Have a look ⬇️
 **Deploying:** Netlify
 <br>
 
-<img src="/images/img1.png" alt="">
-
-<br>
-
-<img src="/images/img2.png" alt="">
-
-<br>
-<img src="/images/img3.png" alt="">
-
-<br>
-<img src="/images/img4.png" alt="">
-
-<br>
-<img src="/images/img5.png" alt="">
-
-<br>
-<img src="/images/img6.png" alt="">
-
-<br>
-<img src="/images/img7.png" alt="">
-
-<br>
-<img src="/images/img8.png" alt="">
-
-<br>
-<img src="/images/img9.png" alt="">
-
-<br>
-<img src="/images/img10.png" alt="">
-
-<br>
-<img src="/images/img11.png" alt="">
-
-<br>
-<img src="/images/img12.png" alt="">
-
-<br>
-
-
 ##Contributors:
 ## @Ritesh Aravindra
 ## @Somya
 ## @Gaurav
 ## @Hamant
-
+## @Kausik
 
 
 ## THANK YOU ❤️
